@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27428.2005
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DentalCard", "DentalCard\DentalCard.csproj", "{074AE021-46CC-4F23-9E2C-74767DDAFC04}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DC.Web", "DentalCard\DC.Web.csproj", "{074AE021-46CC-4F23-9E2C-74767DDAFC04}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
