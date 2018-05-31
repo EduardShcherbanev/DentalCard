@@ -3,16 +3,17 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
-    <title>@ViewData["Title"] - Custom Vocabulary</title>
+    <title>@ViewData["Title"] - Diana Gevorkyan</title>
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    
 
+    <link rel="stylesheet" href="~/css/site.css" />
 </head>
 <body>
-    <div>
-        @RenderBody()
-    </div>
+    @RenderBody()
+
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
 </body>
 </html>
