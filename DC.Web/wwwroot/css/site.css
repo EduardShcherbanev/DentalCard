@@ -20,6 +20,9 @@
     width: 100%;
 }
 
+.brand-logo {
+    margin-left: 15px;
+}
 /* QR code generator */
 #qrCode {
     margin: 15px;
