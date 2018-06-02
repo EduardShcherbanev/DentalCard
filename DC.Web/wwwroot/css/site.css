@@ -23,6 +23,14 @@
 .brand-logo {
     margin-left: 15px;
 }
+
+img.brand-logo {
+    height: 64px;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 24px;
+}
+
 /* QR code generator */
 #qrCode {
     margin: 15px;

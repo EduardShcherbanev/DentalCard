@@ -1,6 +1,6 @@
 ﻿import { combineReducers } from 'redux'
-//import header from '../containers/header/headerReducer.jsx'
+import home from '../containers/home/homeReducer.jsx'
 
 export default combineReducers({
-    //header
+    home
 })

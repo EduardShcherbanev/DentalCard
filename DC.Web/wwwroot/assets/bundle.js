@@ -24530,133 +24530,199 @@ var Header = function (_React$Component) {
         value: function render() {
             return _react2.default.createElement(
                 'div',
-                { className: 'navbar-fixed' },
+                null,
                 _react2.default.createElement(
-                    'nav',
-                    { className: 'cyan' },
+                    'div',
+                    { className: 'hide-on-med-and-down cyan lighten-4 white-text' },
+                    _react2.default.createElement('img', { className: 'brand-logo responsive-img', src: 'favicon.png' }),
                     _react2.default.createElement(
-                        'div',
-                        { className: 'nav-wrapper' },
-                        _react2.default.createElement(
-                            'div',
-                            { className: 'brand-logo' },
-                            _react2.default.createElement(
-                                'i',
-                                { className: 'material-icons' },
-                                'mood'
-                            ),
-                            _react2.default.createElement(
-                                _reactRouterDom.Link,
-                                { to: '/' },
-                                '\u0414\u0438\u0430\u043D\u0430 \u0413\u0435\u0432\u043E\u0440\u043A\u044F\u043D'
-                            )
-                        ),
-                        _react2.default.createElement(
-                            'a',
-                            { href: '#', 'data-target': 'mobile-demo', className: 'sidenav-trigger' },
-                            _react2.default.createElement(
-                                'i',
-                                { className: 'material-icons' },
-                                'menu'
-                            )
-                        ),
-                        _react2.default.createElement(
-                            'ul',
-                            { className: 'right hide-on-med-and-down' },
-                            _react2.default.createElement(
-                                'li',
-                                null,
-                                _react2.default.createElement(
-                                    _reactRouterDom.Link,
-                                    { to: '/' },
-                                    '\u0413\u043B\u0430\u0432\u043D\u0430\u044F'
-                                )
-                            ),
-                            _react2.default.createElement(
-                                'li',
-                                null,
-                                _react2.default.createElement(
-                                    _reactRouterDom.Link,
-                                    { to: '/about' },
-                                    '\u041E\u0431\u043E \u043C\u043D\u0435'
-                                )
-                            ),
-                            _react2.default.createElement(
-                                'li',
-                                null,
-                                _react2.default.createElement(
-                                    _reactRouterDom.Link,
-                                    { to: '/services' },
-                                    '\u0423\u0441\u043B\u0443\u0433\u0438'
-                                )
-                            ),
-                            _react2.default.createElement(
-                                'li',
-                                null,
-                                _react2.default.createElement(
-                                    _reactRouterDom.Link,
-                                    { to: '/portfolio' },
-                                    '\u041C\u043E\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430'
-                                )
-                            ),
-                            _react2.default.createElement(
-                                'li',
-                                null,
-                                _react2.default.createElement(
-                                    _reactRouterDom.Link,
-                                    { to: '/contacts' },
-                                    '\u041A\u043E\u043D\u0442\u0430\u043A\u0442\u044B'
-                                )
-                            )
-                        )
+                        'h5',
+                        { className: 'right' },
+                        '+7 926 191-23-94'
                     )
                 ),
                 _react2.default.createElement(
-                    'ul',
-                    { className: 'sidenav', id: 'mobile-demo' },
+                    'div',
+                    { className: 'navbar-fixed' },
                     _react2.default.createElement(
-                        'li',
-                        null,
+                        'ul',
+                        { id: 'dropdown1', className: 'dropdown-content' },
                         _react2.default.createElement(
-                            _reactRouterDom.Link,
-                            { to: '/' },
-                            '\u0413\u043B\u0430\u0432\u043D\u0430\u044F'
-                        )
-                    ),
-                    _react2.default.createElement(
-                        'li',
-                        null,
+                            'li',
+                            null,
+                            _react2.default.createElement(
+                                'a',
+                                { className: 'right white-text', href: 'viber://tel:+79261912394' },
+                                _react2.default.createElement(
+                                    'i',
+                                    { className: 'material-icons' },
+                                    'message'
+                                ),
+                                'Viber'
+                            )
+                        ),
                         _react2.default.createElement(
-                            _reactRouterDom.Link,
-                            { to: '/about' },
-                            '\u041E\u0431\u043E \u043C\u043D\u0435'
-                        )
-                    ),
-                    _react2.default.createElement(
-                        'li',
-                        null,
+                            'li',
+                            null,
+                            _react2.default.createElement(
+                                'a',
+                                { className: 'right white-text', href: 'whatsapp://tel:+79261912394' },
+                                _react2.default.createElement(
+                                    'i',
+                                    { className: 'material-icons' },
+                                    'message'
+                                ),
+                                'Whatsapp'
+                            )
+                        ),
                         _react2.default.createElement(
-                            _reactRouterDom.Link,
-                            { to: '/services' },
-                            '\u0423\u0441\u043B\u0443\u0433\u0438'
-                        )
-                    ),
-                    _react2.default.createElement(
-                        'li',
-                        null,
-                        _react2.default.createElement(
-                            _reactRouterDom.Link,
-                            { to: '/portfolio' },
-                            '\u041C\u043E\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430'
-                        )
-                    ),
-                    _react2.default.createElement(
-                        'li',
-                        null,
+                            'li',
+                            null,
+                            _react2.default.createElement(
+                                'a',
+                                { className: 'right white-text', href: 'mailto:fireshock2@gmail.com' },
+                                _react2.default.createElement(
+                                    'i',
+                                    { className: 'material-icons' },
+                                    'email'
+                                ),
+                                'fireshock2@gmail.com'
+                            )
+                        ),
+                        _react2.default.createElement('li', { className: 'divider' }),
                         _react2.default.createElement(
                             _reactRouterDom.Link,
                             { to: '/contacts' },
-                            '\u041A\u043E\u043D\u0442\u0430\u043A\u0442\u044B'
+                            '\u0415\u0449\u0435'
+                        )
+                    ),
+                    _react2.default.createElement(
+                        'nav',
+                        { className: 'cyan' },
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'nav-wrapper' },
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'brand-logo' },
+                                _react2.default.createElement(
+                                    _reactRouterDom.Link,
+                                    { to: '/' },
+                                    'Dental Card'
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'a',
+                                { href: '#', 'data-target': 'mobile-demo', className: 'sidenav-trigger' },
+                                _react2.default.createElement(
+                                    'i',
+                                    { className: 'material-icons' },
+                                    'menu'
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'ul',
+                                { className: 'right hide-on-med-and-down' },
+                                _react2.default.createElement(
+                                    'li',
+                                    null,
+                                    _react2.default.createElement(
+                                        _reactRouterDom.Link,
+                                        { to: '/' },
+                                        '\u0413\u043B\u0430\u0432\u043D\u0430\u044F'
+                                    )
+                                ),
+                                _react2.default.createElement(
+                                    'li',
+                                    null,
+                                    _react2.default.createElement(
+                                        _reactRouterDom.Link,
+                                        { to: '/about' },
+                                        '\u041E\u0431\u043E \u043C\u043D\u0435'
+                                    )
+                                ),
+                                _react2.default.createElement(
+                                    'li',
+                                    null,
+                                    _react2.default.createElement(
+                                        _reactRouterDom.Link,
+                                        { to: '/services' },
+                                        '\u0423\u0441\u043B\u0443\u0433\u0438'
+                                    )
+                                ),
+                                _react2.default.createElement(
+                                    'li',
+                                    null,
+                                    _react2.default.createElement(
+                                        _reactRouterDom.Link,
+                                        { to: '/portfolio' },
+                                        '\u041C\u043E\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430'
+                                    )
+                                ),
+                                _react2.default.createElement(
+                                    'li',
+                                    null,
+                                    _react2.default.createElement(
+                                        'a',
+                                        { className: 'dropdown-trigger', href: '#!', 'data-target': 'dropdown1' },
+                                        '\u041A\u043E\u043D\u0442\u0430\u043A\u0442\u044B',
+                                        _react2.default.createElement(
+                                            'i',
+                                            { className: 'material-icons right' },
+                                            'arrow_drop_down'
+                                        )
+                                    )
+                                )
+                            )
+                        )
+                    ),
+                    _react2.default.createElement(
+                        'ul',
+                        { className: 'sidenav', id: 'mobile-demo' },
+                        _react2.default.createElement(
+                            'li',
+                            null,
+                            _react2.default.createElement(
+                                _reactRouterDom.Link,
+                                { to: '/' },
+                                '\u0413\u043B\u0430\u0432\u043D\u0430\u044F'
+                            )
+                        ),
+                        _react2.default.createElement(
+                            'li',
+                            null,
+                            _react2.default.createElement(
+                                _reactRouterDom.Link,
+                                { to: '/about' },
+                                '\u041E\u0431\u043E \u043C\u043D\u0435'
+                            )
+                        ),
+                        _react2.default.createElement(
+                            'li',
+                            null,
+                            _react2.default.createElement(
+                                _reactRouterDom.Link,
+                                { to: '/services' },
+                                '\u0423\u0441\u043B\u0443\u0433\u0438'
+                            )
+                        ),
+                        _react2.default.createElement(
+                            'li',
+                            null,
+                            _react2.default.createElement(
+                                _reactRouterDom.Link,
+                                { to: '/portfolio' },
+                                '\u041C\u043E\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430'
+                            )
+                        ),
+                        _react2.default.createElement(
+                            'li',
+                            null,
+                            _react2.default.createElement(
+                                _reactRouterDom.Link,
+                                { to: '/contacts' },
+                                '\u041A\u043E\u043D\u0442\u0430\u043A\u0442\u044B'
+                            )
                         )
                     )
                 )
@@ -28001,14 +28067,15 @@ var _rootReducer = __webpack_require__(119);
 
 var _rootReducer2 = _interopRequireDefault(_rootReducer);
 
-var _reduxThunk = __webpack_require__(120);
+var _reduxThunk = __webpack_require__(121);
 
 var _reduxThunk2 = _interopRequireDefault(_reduxThunk);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function configureStore(initialState) {
-    var store = (0, _redux.createStore)(_rootReducer2.default, initialState, (0, _redux.applyMiddleware)(_reduxThunk2.default));
+    //const store = createStore(rootReducer, initialState, applyMiddleware(thunk));
+    var store = (0, _redux.createStore)(function () {});
 
     if (false) {
         module.hot.accept('../reducers', function () {
@@ -28033,14 +28100,27 @@ Object.defineProperty(exports, "__esModule", {
 
 var _redux = __webpack_require__(17);
 
-//import header from '../containers/header/headerReducer.jsx'
+var _homeReducer = __webpack_require__(120);
+
+var _homeReducer2 = _interopRequireDefault(_homeReducer);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.default = (0, _redux.combineReducers)({
-    //header
+    home: _homeReducer2.default
 });
 
 /***/ }),
 /* 120 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var initialState = {};
+
+/***/ }),
+/* 121 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
