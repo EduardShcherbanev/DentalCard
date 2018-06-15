@@ -21,10 +21,6 @@ export default class Routing extends React.Component {
                         <Route path="/services" component={Services} />
                     </Switch>
                 </main>
-                <hr />
-                <footer>
-                    <p>&copy; 2018 - Диана Геворкян</p>
-                </footer>
             </div>
         );
     }
