@@ -26021,22 +26021,51 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var Header = function (_React$Component) {
     _inherits(Header, _React$Component);
 
-    function Header() {
+    function Header(props) {
         _classCallCheck(this, Header);
 
-        return _possibleConstructorReturn(this, (Header.__proto__ || Object.getPrototypeOf(Header)).apply(this, arguments));
+        var _this = _possibleConstructorReturn(this, (Header.__proto__ || Object.getPrototypeOf(Header)).call(this, props));
+
+        _this.state = {
+            scrollingLock: false
+        };
+        _this.handleScroll = _this.handleScroll.bind(_this);
+        return _this;
     }
 
     _createClass(Header, [{
+        key: 'componentDidMount',
+        value: function componentDidMount() {
+            window.addEventListener("scroll", this.handleScroll);
+        }
+    }, {
+        key: 'componentWillUnmount',
+        value: function componentWillUnmount() {
+            window.removeEventListener("scroll", this.handleScroll);
+        }
+    }, {
+        key: 'handleScroll',
+        value: function handleScroll() {
+            if (window.scrollY > 112) {
+                this.setState({
+                    scrollingLock: true
+                });
+            } else if (window.scrollY < 112) {
+                this.setState({
+                    scrollingLock: false
+                });
+            }
+        }
+    }, {
         key: 'render',
         value: function render() {
             return _react2.default.createElement(
                 'div',
-                null,
+                { style: { marginBottom: this.state.scrollingLock ? "64px" : "0" } },
                 _react2.default.createElement(
                     'div',
                     { className: 'hide-on-med-and-down cyan lighten-4' },
-                    _react2.default.createElement('img', { className: 'brand-logo responsive-img', src: 'favicon.png' }),
+                    _react2.default.createElement('img', { className: 'brand-logo responsive-img', src: 'favicon.png', alt: '' }),
                     _react2.default.createElement(
                         'div',
                         { className: 'right valign-wrapper' },
@@ -26068,7 +26097,7 @@ var Header = function (_React$Component) {
                 ),
                 _react2.default.createElement(
                     _reactMaterialize.Navbar,
-                    { id: '#navbar', brand: 'Dental Card', right: true, className: 'cyan' },
+                    { brand: 'Dental Card', right: true, className: 'cyan', style: { width: "100%", top: "0", position: this.state.scrollingLock ? "fixed" : "relative" } },
                     _react2.default.createElement(
                         'li',
                         null,
