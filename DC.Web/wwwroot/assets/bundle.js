@@ -26070,30 +26070,34 @@ var Header = function (_React$Component) {
                 { style: { marginBottom: this.state.scrollingLock ? "64px" : "0" } },
                 _react2.default.createElement(
                     'div',
-                    { className: 'hide-on-med-and-down cyan lighten-4' },
+                    { className: 'hide-on-med-and-down primary lighten-4' },
                     _react2.default.createElement('img', { className: 'brand-logo responsive-img', src: 'favicon.png', alt: '' }),
                     _react2.default.createElement(
                         'div',
                         { className: 'right valign-wrapper' },
                         _react2.default.createElement(
-                            'div',
+                            'p',
                             null,
                             _react2.default.createElement(
-                                'h5',
-                                null,
+                                'a',
+                                { href: 'tel:+7 926 191-23-94' },
                                 _react2.default.createElement(
                                     _reactMaterialize.Icon,
-                                    null,
+                                    { tiny: true },
                                     'phone'
                                 ),
                                 ' +7 926 191-23-94'
-                            ),
+                            )
+                        ),
+                        _react2.default.createElement(
+                            'p',
+                            null,
                             _react2.default.createElement(
-                                'h5',
-                                null,
+                                'a',
+                                { href: 'mailto:fireshock2@gmail.com' },
                                 _react2.default.createElement(
                                     _reactMaterialize.Icon,
-                                    null,
+                                    { tiny: true },
                                     'email'
                                 ),
                                 ' fireshock2@gmail.com'
@@ -26103,7 +26107,7 @@ var Header = function (_React$Component) {
                 ),
                 _react2.default.createElement(
                     _reactMaterialize.Navbar,
-                    { brand: 'Dental Card', right: true, className: 'cyan', style: { width: "100%", top: "0", position: this.state.scrollingLock ? "fixed" : "relative" } },
+                    { brand: 'Dental Card', right: true, className: 'primary', style: { width: "100%", top: "0", position: this.state.scrollingLock ? "fixed" : "relative" } },
                     _react2.default.createElement(
                         'li',
                         null,
@@ -33169,7 +33173,7 @@ var Home = function (_React$Component) {
                     { className: 'section' },
                     _react2.default.createElement(
                         'div',
-                        { className: 'row cyan-text' },
+                        { className: 'row primary-text' },
                         _react2.default.createElement(
                             'h1',
                             null,
@@ -33193,7 +33197,7 @@ var Home = function (_React$Component) {
                             { s: 12, m: 6 },
                             _react2.default.createElement(
                                 'h2',
-                                { className: 'cyan-text' },
+                                { className: 'primary-text' },
                                 '\u0417\u0430\u0433\u043E\u043B\u043E\u0432\u043E\u043A'
                             ),
                             _react2.default.createElement(
@@ -33224,7 +33228,7 @@ var Home = function (_React$Component) {
                             { s: 12, m: 6 },
                             _react2.default.createElement(
                                 'h2',
-                                { className: 'cyan-text' },
+                                { className: 'primary-text' },
                                 '\u0413\u043B\u0443\u0431\u043E\u043A\u0438\u0439 \u0441\u043C\u044B\u0441\u043B'
                             ),
                             _react2.default.createElement(
@@ -33452,7 +33456,7 @@ var Services = function (_React$Component) {
                     { className: 'section' },
                     _react2.default.createElement(
                         'div',
-                        { className: 'row cyan-text' },
+                        { className: 'row primary-text' },
                         _react2.default.createElement(
                             'h1',
                             null,
@@ -33496,7 +33500,7 @@ var Services = function (_React$Component) {
                 ),
                 _react2.default.createElement(
                     _reactMaterialize.Navbar,
-                    { brand: 'Dental Card', right: true, className: 'cyan lighten-3' },
+                    { brand: 'Dental Card', right: true, className: 'primary lighten-3' },
                     _react2.default.createElement(
                         'li',
                         null,
@@ -33549,6 +33553,98 @@ var Services = function (_React$Component) {
                             _reactRouterDom.Link,
                             { to: 'contacts' },
                             '\u0413\u043D\u0430\u0442\u043E\u043B\u043E\u0433\u0438\u044F'
+                        )
+                    )
+                ),
+                _react2.default.createElement(
+                    _reactMaterialize.Row,
+                    { className: 'right-align' },
+                    _react2.default.createElement(
+                        _reactMaterialize.Col,
+                        { s: 2, m: 2, l: 2 },
+                        _react2.default.createElement(
+                            _reactRouterDom.Link,
+                            { to: '/' },
+                            _react2.default.createElement(
+                                _reactMaterialize.CardPanel,
+                                { className: 'primary lighten-4 text-primary' },
+                                '\u0414\u0438\u0430\u0433\u043D\u043E\u0441\u0442\u0438\u043A\u0430'
+                            )
+                        )
+                    ),
+                    _react2.default.createElement(
+                        _reactMaterialize.Col,
+                        { s: 2, m: 2, l: 2 },
+                        _react2.default.createElement(
+                            _reactMaterialize.CardPanel,
+                            { className: 'primary lighten-4 text-primary' },
+                            _react2.default.createElement(
+                                _reactRouterDom.Link,
+                                { to: '/' },
+                                '\u0414\u0438\u0430\u0433\u043D\u043E\u0441\u0442\u0438\u043A\u0430'
+                            )
+                        )
+                    )
+                ),
+                _react2.default.createElement(
+                    'div',
+                    { className: 'hide-on-large-only' },
+                    _react2.default.createElement(
+                        _reactMaterialize.Dropdown,
+                        { className: 'text-primary', options: { hover: true, constrainWidth: false }, trigger: _react2.default.createElement(_reactMaterialize.Button, { floating: true, large: true, className: 'primary services-fab', waves: 'light', icon: 'list' }) },
+                        _react2.default.createElement(
+                            'li',
+                            null,
+                            _react2.default.createElement(
+                                _reactRouterDom.Link,
+                                { to: '/' },
+                                '\u0414\u0438\u0430\u0433\u043D\u043E\u0441\u0442\u0438\u043A\u0430'
+                            )
+                        ),
+                        _react2.default.createElement(
+                            'li',
+                            null,
+                            _react2.default.createElement(
+                                _reactRouterDom.Link,
+                                { to: 'about' },
+                                '\u0422\u0435\u0440\u0430\u043F\u0438\u044F'
+                            )
+                        ),
+                        _react2.default.createElement(
+                            'li',
+                            null,
+                            _react2.default.createElement(
+                                _reactRouterDom.Link,
+                                { to: 'services' },
+                                '\u041E\u0440\u0442\u043E\u043F\u0435\u0434\u0438\u044F'
+                            )
+                        ),
+                        _react2.default.createElement(
+                            'li',
+                            null,
+                            _react2.default.createElement(
+                                _reactRouterDom.Link,
+                                { to: 'portfolio' },
+                                '\u0425\u0438\u0440\u0443\u0440\u0433\u0438\u044F'
+                            )
+                        ),
+                        _react2.default.createElement(
+                            'li',
+                            null,
+                            _react2.default.createElement(
+                                _reactRouterDom.Link,
+                                { to: 'contacts' },
+                                '\u0418\u043C\u043F\u043B\u0430\u043D\u0442\u043E\u043B\u043E\u0433\u0438\u044F'
+                            )
+                        ),
+                        _react2.default.createElement(
+                            'li',
+                            null,
+                            _react2.default.createElement(
+                                _reactRouterDom.Link,
+                                { to: 'contacts' },
+                                '\u0413\u043D\u0430\u0442\u043E\u043B\u043E\u0433\u0438\u044F'
+                            )
                         )
                     )
                 )

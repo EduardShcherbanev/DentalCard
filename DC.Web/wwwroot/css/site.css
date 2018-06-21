@@ -43,6 +43,13 @@ img.brand-logo {
     color: #00bcd4;
 }
 
+.services-fab {
+    position: fixed;
+    right: 23px;
+    top: 87px;
+    z-index: 997;
+}
+
 /* QR code generator */
 #qrCode {
     margin: 15px;

@@ -42,22 +42,20 @@ export default class Header extends React.Component {
     render() {
         return (
             <div style={{ marginBottom: this.state.scrollingLock ? "64px" : "0" }}>
-                <div className="hide-on-med-and-down cyan lighten-4">
+                <div className="hide-on-med-and-down primary lighten-4">
                     <img className="brand-logo responsive-img" src="favicon.png" alt="" />
-                <div className="right valign-wrapper">
-                    <div>
-                        <h5><Icon>phone</Icon> +7 926 191-23-94</h5>
-                        <h5><Icon>email</Icon> fireshock2@gmail.com</h5>
+                    <div className="right valign-wrapper">
+                        <p><a href="tel:+7 926 191-23-94"><Icon tiny>phone</Icon> +7 926 191-23-94</a></p>
+                        <p><a href="mailto:fireshock2@gmail.com"><Icon tiny>email</Icon> fireshock2@gmail.com</a></p>
                     </div>
                 </div>
-            </div>
-            <Navbar brand="Dental Card" right className="cyan" style={{ width: "100%", top: "0", position: this.state.scrollingLock ? "fixed" : "relative" }}>
-                <li><Link to="/">Главная</Link></li>
-                <li><Link to="about">Обо мне</Link></li>
-                <li><Link to="services">Услуги</Link></li>
-                <li><Link to="portfolio">Мои работы</Link></li>
-                <li><Link to="contacts">Контакты</Link></li>
-            </Navbar>
+                <Navbar brand="Dental Card" right className="primary" style={{ width: "100%", top: "0", position: this.state.scrollingLock ? "fixed" : "relative" }}>
+                    <li><Link to="/">Главная</Link></li>
+                    <li><Link to="about">Обо мне</Link></li>
+                    <li><Link to="services">Услуги</Link></li>
+                    <li><Link to="portfolio">Мои работы</Link></li>
+                    <li><Link to="contacts">Контакты</Link></li>
+                </Navbar>
             </div >
         );
     }

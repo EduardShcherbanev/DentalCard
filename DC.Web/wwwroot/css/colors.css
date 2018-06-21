@@ -1,0 +1,115 @@
+﻿.dropdown-content li > a, .dropdown-content li > span {
+    color: #2196F3;
+}
+
+.primary {
+    background-color: #2196F3 !important;
+}
+
+.primary-text {
+    color: #2196F3 !important;
+}
+
+.primary.lighten-5 {
+    background-color: #E3F2FD !important;
+}
+
+.primary-text.text-lighten-5 {
+    color: #E3F2FD !important;
+}
+
+.primary.lighten-4 {
+    background-color: #BBDEFB !important;
+}
+
+.primary-text.text-lighten-4 {
+    color: #BBDEFB !important;
+}
+
+.primary.lighten-3 {
+    background-color: #90CAF9 !important;
+}
+
+.primary-text.text-lighten-3 {
+    color: #90CAF9 !important;
+}
+
+.primary.lighten-2 {
+    background-color: #64B5F6 !important;
+}
+
+.primary-text.text-lighten-2 {
+    color: #64B5F6 !important;
+}
+
+.primary.lighten-1 {
+    background-color: #42A5F5 !important;
+}
+
+.primary-text.text-lighten-1 {
+    color: #42A5F5 !important;
+}
+
+.primary.darken-1 {
+    background-color: #1E88E5 !important;
+}
+
+.primary-text.text-darken-1 {
+    color: #1E88E5 !important;
+}
+
+.primary.darken-2 {
+    background-color: #1976D2 !important;
+}
+
+.primary-text.text-darken-2 {
+    color: #1976D2 !important;
+}
+
+.primary.darken-3 {
+    background-color: #1565C0 !important;
+}
+
+.primary-text.text-darken-3 {
+    color: #1565C0 !important;
+}
+
+.primary.darken-4 {
+    background-color: #0D47A1 !important;
+}
+
+.primary-text.text-darken-4 {
+    color: #0D47A1 !important;
+}
+
+.primary.accent-1 {
+    background-color: #82B1FF !important;
+}
+
+.primary-text.text-accent-1 {
+    color: #82B1FF !important;
+}
+
+.primary.accent-2 {
+    background-color: #448AFF !important;
+}
+
+.primary-text.text-accent-2 {
+    color: #448AFF !important;
+}
+
+.primary.accent-3 {
+    background-color: #2979FF !important;
+}
+
+.primary-text.text-accent-3 {
+    color: #2979FF !important;
+}
+
+.primary.accent-4 {
+    background-color: #2962FF !important;
+}
+
+.primary-text.text-accent-4 {
+    color: #2962FF !important;
+}
