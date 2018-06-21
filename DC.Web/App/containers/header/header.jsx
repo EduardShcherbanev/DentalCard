@@ -27,9 +27,15 @@ export default class Header extends React.Component {
                 scrollingLock: true
             });
         } else if (window.scrollY < 112) {
-            this.setState({
-                scrollingLock: false
-            });
+            if (window.innerWidth > 992) {
+                this.setState({
+                    scrollingLock: false
+                });
+            } else {
+                this.setState({
+                    scrollingLock: true
+                });
+            }
         }
     }
 
