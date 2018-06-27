@@ -33340,12 +33340,16 @@ var About = function (_React$Component) {
     }
 
     _createClass(About, [{
-        key: 'render',
+        key: "render",
         value: function render() {
             return _react2.default.createElement(
-                'div',
+                "div",
                 null,
-                '\u041E\u0431\u043E \u043C\u043D\u0435'
+                _react2.default.createElement(
+                    "h3",
+                    { className: "pink-text" },
+                    "\u042F - \u0441\u0430\u043C\u0430\u044F \u043B\u0443\u0447\u0448\u0430\u044F"
+                )
             );
         }
     }]);
@@ -33428,6 +33432,10 @@ var _reactRouterDom = __webpack_require__(26);
 
 var _reactMaterialize = __webpack_require__(32);
 
+var _serviceCard = __webpack_require__(171);
+
+var _serviceCard2 = _interopRequireDefault(_serviceCard);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -33446,204 +33454,97 @@ var Services = function (_React$Component) {
     }
 
     _createClass(Services, [{
-        key: 'render',
+        key: "render",
         value: function render() {
             return _react2.default.createElement(
-                'div',
+                "div",
                 null,
                 _react2.default.createElement(
-                    'div',
-                    { className: 'section' },
+                    "div",
+                    { className: "section" },
                     _react2.default.createElement(
-                        'div',
-                        { className: 'row primary-text' },
+                        "div",
+                        { className: "row primary-text" },
                         _react2.default.createElement(
-                            'h1',
+                            "h1",
                             null,
-                            '\u0423\u0441\u043B\u0443\u0433\u0438'
+                            "\u0423\u0441\u043B\u0443\u0433\u0438"
                         )
                     )
                 ),
                 _react2.default.createElement(
-                    _reactMaterialize.Tabs,
+                    "section",
                     null,
                     _react2.default.createElement(
-                        _reactMaterialize.Tab,
-                        { title: '\u0414\u0438\u0430\u0433\u043D\u043E\u0441\u0442\u0438\u043A\u0430' },
-                        'Test 4'
-                    ),
-                    _react2.default.createElement(
-                        _reactMaterialize.Tab,
-                        { title: '\u0422\u0435\u0440\u0430\u043F\u0438\u044F' },
-                        'Test 1'
-                    ),
-                    _react2.default.createElement(
-                        _reactMaterialize.Tab,
-                        { title: '\u041E\u0440\u0442\u043E\u043F\u0435\u0434\u0438\u044F', active: true },
-                        'Test 2'
-                    ),
-                    _react2.default.createElement(
-                        _reactMaterialize.Tab,
-                        { title: '\u0425\u0438\u0440\u0443\u0440\u0433\u0438\u044F' },
-                        'Test 3'
-                    ),
-                    _react2.default.createElement(
-                        _reactMaterialize.Tab,
-                        { title: '\u0418\u043C\u043F\u043B\u0430\u043D\u0442\u043E\u043B\u043E\u0433\u0438\u044F' },
-                        'Test 4'
-                    ),
-                    _react2.default.createElement(
-                        _reactMaterialize.Tab,
-                        { title: '\u0413\u043D\u0430\u0442\u043E\u043B\u043E\u0433\u0438\u044F' },
-                        'Test 4'
+                        "p",
+                        { className: "grey-text text-darken-3 lighten-3" },
+                        "\u042F \u0443\u043C\u0435\u044E \u043E\u0447\u0435\u043D\u044C \u043C\u043D\u043E\u0433\u043E\u0435. \u0414\u0430\u0436\u0435 \u043D\u0435 \u043F\u0435\u0440\u0435\u0447\u0438\u0441\u043B\u0438\u0442\u044C. \u0425\u043E\u0442\u044F, \u0435\u0441\u043B\u0438 \u043D\u0430\u043F\u0440\u044F\u0447\u044C\u0441\u044F, \u0442\u043E \u0432\u043E\u0442 \u0442\u0430\u043A\u043E\u0439 \u0441\u043F\u0438\u0441\u043E\u043A \u0442\u0435\u0445 \u043E\u0431\u043B\u0430\u0441\u0442\u0435\u0439 \u043C\u0435\u0434\u0438\u0446\u0438\u043D\u044B, \u043F\u043E \u043A\u043E\u0442\u043E\u0440\u044B\u043C \u0432\u044B \u043C\u043E\u0436\u0435\u0442\u0435 \u043F\u043E\u043B\u0443\u0447\u0438\u0442\u044C \u043A\u043E\u043D\u0441\u0443\u043B\u044C\u0442\u0430\u0446\u0438\u044E \u0438 \u043B\u0435\u0447\u0435\u043D\u0438\u0435."
                     )
                 ),
+                _react2.default.createElement(_serviceCard2.default, { serviceName: "\u0414\u0438\u0430\u0433\u043D\u043E\u0441\u0442\u0438\u043A\u0430", serviceTasks: [{ name: "Выявление кариеса" }, { name: "Выяснение причин боли" }] }),
+                _react2.default.createElement(_serviceCard2.default, { serviceName: "\u0422\u0435\u0440\u0430\u043F\u0438\u044F", serviceTasks: [{ name: "Пломбы" }, { name: "Кариес" }, { name: "Пульпит" }, { name: "Периодонтит" }] }),
+                _react2.default.createElement(_serviceCard2.default, { serviceName: "\u041E\u0440\u0442\u043E\u043F\u0435\u0434\u0438\u044F", serviceTasks: [{ name: "Восстановление зубов" }, { name: "Коронки" }, { name: "Протезы" }, { name: "Культевые вкладки" }, { name: "Накладки" }] }),
+                _react2.default.createElement(_serviceCard2.default, { serviceName: "\u0425\u0438\u0440\u0443\u0440\u0433\u0438\u044F", serviceTasks: [{ name: "Удаление" }, { name: "Вестибулопластика" }, { name: "Френулопластика" }] }),
+                _react2.default.createElement(_serviceCard2.default, { serviceName: "\u0418\u043C\u043F\u043B\u0430\u043D\u0442\u043E\u043B\u043E\u0433\u0438\u044F", serviceTasks: [{ name: "Импланты" }] }),
+                _react2.default.createElement(_serviceCard2.default, { serviceName: "\u0413\u043D\u0430\u0442\u043E\u043B\u043E\u0433\u0438\u044F", serviceTasks: [{ name: "Соотношение зубных рядов" }] }),
                 _react2.default.createElement(
-                    _reactMaterialize.Navbar,
-                    { brand: 'Dental Card', right: true, className: 'primary lighten-3' },
-                    _react2.default.createElement(
-                        'li',
-                        null,
-                        _react2.default.createElement(
-                            _reactRouterDom.Link,
-                            { to: '/' },
-                            '\u0414\u0438\u0430\u0433\u043D\u043E\u0441\u0442\u0438\u043A\u0430'
-                        )
-                    ),
-                    _react2.default.createElement(
-                        'li',
-                        null,
-                        _react2.default.createElement(
-                            _reactRouterDom.Link,
-                            { to: 'about' },
-                            '\u0422\u0435\u0440\u0430\u043F\u0438\u044F'
-                        )
-                    ),
-                    _react2.default.createElement(
-                        'li',
-                        null,
-                        _react2.default.createElement(
-                            _reactRouterDom.Link,
-                            { to: 'services' },
-                            '\u041E\u0440\u0442\u043E\u043F\u0435\u0434\u0438\u044F'
-                        )
-                    ),
-                    _react2.default.createElement(
-                        'li',
-                        null,
-                        _react2.default.createElement(
-                            _reactRouterDom.Link,
-                            { to: 'portfolio' },
-                            '\u0425\u0438\u0440\u0443\u0440\u0433\u0438\u044F'
-                        )
-                    ),
-                    _react2.default.createElement(
-                        'li',
-                        null,
-                        _react2.default.createElement(
-                            _reactRouterDom.Link,
-                            { to: 'contacts' },
-                            '\u0418\u043C\u043F\u043B\u0430\u043D\u0442\u043E\u043B\u043E\u0433\u0438\u044F'
-                        )
-                    ),
-                    _react2.default.createElement(
-                        'li',
-                        null,
-                        _react2.default.createElement(
-                            _reactRouterDom.Link,
-                            { to: 'contacts' },
-                            '\u0413\u043D\u0430\u0442\u043E\u043B\u043E\u0433\u0438\u044F'
-                        )
-                    )
-                ),
-                _react2.default.createElement(
-                    _reactMaterialize.Row,
-                    { className: 'right-align' },
-                    _react2.default.createElement(
-                        _reactMaterialize.Col,
-                        { s: 2, m: 2, l: 2 },
-                        _react2.default.createElement(
-                            _reactRouterDom.Link,
-                            { to: '/' },
-                            _react2.default.createElement(
-                                _reactMaterialize.CardPanel,
-                                { className: 'primary lighten-4 text-primary' },
-                                '\u0414\u0438\u0430\u0433\u043D\u043E\u0441\u0442\u0438\u043A\u0430'
-                            )
-                        )
-                    ),
-                    _react2.default.createElement(
-                        _reactMaterialize.Col,
-                        { s: 2, m: 2, l: 2 },
-                        _react2.default.createElement(
-                            _reactMaterialize.CardPanel,
-                            { className: 'primary lighten-4 text-primary' },
-                            _react2.default.createElement(
-                                _reactRouterDom.Link,
-                                { to: '/' },
-                                '\u0414\u0438\u0430\u0433\u043D\u043E\u0441\u0442\u0438\u043A\u0430'
-                            )
-                        )
-                    )
-                ),
-                _react2.default.createElement(
-                    'div',
-                    { className: 'hide-on-large-only' },
+                    "div",
+                    { className: "hide-on-large-only" },
                     _react2.default.createElement(
                         _reactMaterialize.Dropdown,
-                        { className: 'text-primary', options: { hover: true, constrainWidth: false }, trigger: _react2.default.createElement(_reactMaterialize.Button, { floating: true, large: true, className: 'primary services-fab', waves: 'light', icon: 'list' }) },
+                        { className: "text-primary", options: { hover: true, constrainWidth: false }, trigger: _react2.default.createElement(_reactMaterialize.Button, { floating: true, large: true, className: "primary services-fab", waves: "light", icon: "list" }) },
                         _react2.default.createElement(
-                            'li',
+                            "li",
                             null,
                             _react2.default.createElement(
                                 _reactRouterDom.Link,
-                                { to: '/' },
-                                '\u0414\u0438\u0430\u0433\u043D\u043E\u0441\u0442\u0438\u043A\u0430'
+                                { to: "services/diagnostics" },
+                                "\u0414\u0438\u0430\u0433\u043D\u043E\u0441\u0442\u0438\u043A\u0430"
                             )
                         ),
                         _react2.default.createElement(
-                            'li',
+                            "li",
                             null,
                             _react2.default.createElement(
                                 _reactRouterDom.Link,
-                                { to: 'about' },
-                                '\u0422\u0435\u0440\u0430\u043F\u0438\u044F'
+                                { to: "services/therapy" },
+                                "\u0422\u0435\u0440\u0430\u043F\u0438\u044F"
                             )
                         ),
                         _react2.default.createElement(
-                            'li',
+                            "li",
                             null,
                             _react2.default.createElement(
                                 _reactRouterDom.Link,
-                                { to: 'services' },
-                                '\u041E\u0440\u0442\u043E\u043F\u0435\u0434\u0438\u044F'
+                                { to: "services/orthopedics" },
+                                "\u041E\u0440\u0442\u043E\u043F\u0435\u0434\u0438\u044F"
                             )
                         ),
                         _react2.default.createElement(
-                            'li',
+                            "li",
                             null,
                             _react2.default.createElement(
                                 _reactRouterDom.Link,
-                                { to: 'portfolio' },
-                                '\u0425\u0438\u0440\u0443\u0440\u0433\u0438\u044F'
+                                { to: "services/surgery" },
+                                "\u0425\u0438\u0440\u0443\u0440\u0433\u0438\u044F"
                             )
                         ),
                         _react2.default.createElement(
-                            'li',
+                            "li",
                             null,
                             _react2.default.createElement(
                                 _reactRouterDom.Link,
-                                { to: 'contacts' },
-                                '\u0418\u043C\u043F\u043B\u0430\u043D\u0442\u043E\u043B\u043E\u0433\u0438\u044F'
+                                { to: "services/implantology" },
+                                "\u0418\u043C\u043F\u043B\u0430\u043D\u0442\u043E\u043B\u043E\u0433\u0438\u044F"
                             )
                         ),
                         _react2.default.createElement(
-                            'li',
+                            "li",
                             null,
                             _react2.default.createElement(
                                 _reactRouterDom.Link,
-                                { to: 'contacts' },
-                                '\u0413\u043D\u0430\u0442\u043E\u043B\u043E\u0433\u0438\u044F'
+                                { to: "services/gnathology" },
+                                "\u0413\u043D\u0430\u0442\u043E\u043B\u043E\u0433\u0438\u044F"
                             )
                         )
                     )
@@ -33754,6 +33655,70 @@ var thunk = createThunkMiddleware();
 thunk.withExtraArgument = createThunkMiddleware;
 
 /* harmony default export */ __webpack_exports__["default"] = (thunk);
+
+/***/ }),
+/* 171 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactDom = __webpack_require__(17);
+
+var _reactDom2 = _interopRequireDefault(_reactDom);
+
+var _reactMaterialize = __webpack_require__(32);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var ServiceCard = function (_React$Component) {
+    _inherits(ServiceCard, _React$Component);
+
+    function ServiceCard() {
+        _classCallCheck(this, ServiceCard);
+
+        return _possibleConstructorReturn(this, (ServiceCard.__proto__ || Object.getPrototypeOf(ServiceCard)).apply(this, arguments));
+    }
+
+    _createClass(ServiceCard, [{
+        key: 'render',
+        value: function render() {
+            return _react2.default.createElement(
+                _reactMaterialize.Card,
+                { className: 'hoverable cardlink primary lighten-4', title: this.props.serviceName },
+                this.props.serviceTasks.map(function (item) {
+                    return _react2.default.createElement(
+                        'p',
+                        { key: item.name },
+                        '- ',
+                        item.name
+                    );
+                })
+            );
+        }
+    }]);
+
+    return ServiceCard;
+}(_react2.default.Component);
+
+exports.default = ServiceCard;
+;
 
 /***/ })
 /******/ ]);

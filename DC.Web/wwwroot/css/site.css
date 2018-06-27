@@ -24,6 +24,10 @@
     margin-left: 15px;
 }
 
+nav {
+    z-index: 997;
+}
+
 img.brand-logo {
     height: 64px;
     display: inline-block;
@@ -31,23 +35,15 @@ img.brand-logo {
     margin: 24px;
 }
 
-.tabs .indicator {
-    background-color: #00bcd4;
-}
-
-.tabs .tab a {
-    color: #80deea;
-}
-
-.tabs .tab a:hover, .tabs .tab a.active {
-    color: #00bcd4;
-}
-
 .services-fab {
     position: fixed;
     right: 23px;
     top: 87px;
     z-index: 997;
+}
+
+.cardlink {
+    cursor: pointer;
 }
 
 /* QR code generator */

@@ -1,6 +1,7 @@
-﻿import React from 'react';
-import { Link } from 'react-router-dom';
-import { Tabs, Tab, Button, Navbar, Dropdown, NavItem, Row, Col, CardPanel } from 'react-materialize'
+﻿import React from "react";
+import { Link } from "react-router-dom";
+import { Button, Dropdown, Card, CardTitle } from "react-materialize"
+import ServiceCard from "./components/serviceCard.jsx"
 
 export default class Services extends React.Component {
     render() {
@@ -11,44 +12,28 @@ export default class Services extends React.Component {
                         <h1>Услуги</h1>
                     </div>
                 </div>
-                <Tabs>
-                    <Tab title="Диагностика">Test 4</Tab>
-                    <Tab title="Терапия">Test 1</Tab>
-                    <Tab title="Ортопедия" active>Test 2</Tab>
-                    <Tab title="Хирургия">Test 3</Tab>
-                    <Tab title="Имплантология">Test 4</Tab>
-                    <Tab title="Гнатология">Test 4</Tab>
-                </Tabs>
-                <Navbar brand="Dental Card" right className="primary lighten-3">
-                    <li><Link to="/">Диагностика</Link></li>
-                    <li><Link to="about">Терапия</Link></li>
-                    <li><Link to="services">Ортопедия</Link></li>
-                    <li><Link to="portfolio">Хирургия</Link></li>
-                    <li><Link to="contacts">Имплантология</Link></li>
-                    <li><Link to="contacts">Гнатология</Link></li>
-                </Navbar>
 
-                <Row className="right-align">
-                    <Col s={2} m={2} l={2}>
-
-                        <Link to="/"><CardPanel className="primary lighten-4 text-primary">Диагностика</CardPanel></Link>
-
-                    </Col>
-                    <Col s={2} m={2} l={2}>
-                        <CardPanel className="primary lighten-4 text-primary">
-                            <Link to="/">Диагностика</Link>
-                        </CardPanel>
-                    </Col>
-                </Row>
+                <section>
+                    <p className="grey-text text-darken-3 lighten-3">
+                        Я умею очень многое. Даже не перечислить. Хотя, если напрячься, то вот такой список тех областей медицины, по которым вы можете получить консультацию и лечение.
+                    </p>
+                </section>
+                
+                <ServiceCard serviceName="Диагностика" serviceTasks={[{ name: "Выявление кариеса" }, { name: "Выяснение причин боли" }]}></ServiceCard>
+                <ServiceCard serviceName="Терапия" serviceTasks={[{ name: "Пломбы" }, { name: "Кариес" }, { name: "Пульпит" }, { name: "Периодонтит" }]}></ServiceCard>
+                <ServiceCard serviceName="Ортопедия" serviceTasks={[{ name: "Восстановление зубов" }, { name: "Коронки" }, { name: "Протезы" }, { name: "Культевые вкладки" }, { name: "Накладки" }]}></ServiceCard>
+                <ServiceCard serviceName="Хирургия" serviceTasks={[{ name: "Удаление" }, { name: "Вестибулопластика" }, { name: "Френулопластика" }]}></ServiceCard>
+                <ServiceCard serviceName="Имплантология" serviceTasks={[{ name: "Импланты" }]}></ServiceCard>
+                <ServiceCard serviceName="Гнатология" serviceTasks={[{ name: "Соотношение зубных рядов" }]}></ServiceCard>
 
                 <div className="hide-on-large-only">
                     <Dropdown className="text-primary" options={{ hover: true, constrainWidth: false }} trigger={<Button floating large className="primary services-fab" waves="light" icon="list" />}>
-                        <li><Link to="/">Диагностика</Link></li>
-                        <li><Link to="about">Терапия</Link></li>
-                        <li><Link to="services">Ортопедия</Link></li>
-                        <li><Link to="portfolio">Хирургия</Link></li>
-                        <li><Link to="contacts">Имплантология</Link></li>
-                        <li><Link to="contacts">Гнатология</Link></li>
+                        <li><Link to="services/diagnostics">Диагностика</Link></li>
+                        <li><Link to="services/therapy">Терапия</Link></li>
+                        <li><Link to="services/orthopedics">Ортопедия</Link></li>
+                        <li><Link to="services/surgery">Хирургия</Link></li>
+                        <li><Link to="services/implantology">Имплантология</Link></li>
+                        <li><Link to="services/gnathology">Гнатология</Link></li>
                     </Dropdown>
                 </div>
             </div>

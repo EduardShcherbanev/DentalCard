@@ -3,7 +3,9 @@
 export default class About extends React.Component {
     render() {
         return (
-            <div>Обо мне</div>
+            <div>
+                <h3 className="pink-text">Я - самая лучшая</h3>
+            </div>
         );
     }
 };
