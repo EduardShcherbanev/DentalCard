@@ -51,10 +51,10 @@ export default class Header extends React.Component {
                 </div>
                 <Navbar brand="Dental Card" right className="primary" style={{ width: "100%", top: "0", position: this.state.scrollingLock ? "fixed" : "relative" }}>
                     <li><Link to="/">Главная</Link></li>
-                    <li><Link to="about">Обо мне</Link></li>
-                    <li><Link to="services">Услуги</Link></li>
-                    <li><Link to="portfolio">Мои работы</Link></li>
-                    <li><Link to="contacts">Контакты</Link></li>
+                    <li><Link to="/about">Обо мне</Link></li>
+                    <li><Link to="/services">Услуги</Link></li>
+                    <li><Link to="/portfolio">Мои работы</Link></li>
+                    <li><Link to="/contacts">Контакты</Link></li>
                 </Navbar>
             </div >
         );

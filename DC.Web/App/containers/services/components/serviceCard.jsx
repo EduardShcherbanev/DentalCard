@@ -1,13 +1,22 @@
 ﻿import React from 'react';
-import ReactDOM from 'react-dom';
-import { Card } from 'react-materialize'
+import { Link } from "react-router-dom";
+import { Card, Row, Col } from 'react-materialize'
 
 export default class ServiceCard extends React.Component {
     render() {
         return (
-            <Card className="hoverable cardlink primary lighten-4" title={this.props.serviceName}>
-                {this.props.serviceTasks.map(item => (<p key={item.name}>- {item.name}</p>))}
-            </Card>
+            <Link to={this.props.to}>
+                <Card className="hoverable primary lighten-5 cardlink" title={this.props.serviceName}>
+                    <Row>
+                        <Col s={6} m={6} l={6}>
+                            <img src={this.props.image} alt="" />
+                        </Col>
+                        <Col s={6} m={6} l={6}>
+                            {this.props.serviceTasks.map(item => (<p className="primary-text" key={item.name}>— {item.name}</p>))}
+                        </Col>
+                    </Row>
+                </Card>
+            </Link>
         );
     }
 };
