@@ -1,7 +1,7 @@
 ﻿import React from "react";
 import { Link } from "react-router-dom";
-import { Button, Dropdown, Card, CardTitle } from "react-materialize"
-import ServiceCard from "./components/serviceCard.jsx"
+import { Button, Dropdown } from "react-materialize";
+import ServiceCard from "./components/serviceCard.jsx";
 
 export default class Services extends React.Component {
     render() {
@@ -15,12 +15,15 @@ export default class Services extends React.Component {
 
                 <section>
                     <p className="grey-text text-darken-3 lighten-3">
-                        Я умею очень многое. Даже не перечислить. Хотя, если напрячься, то вот такой список тех областей медицины, по которым вы можете получить консультацию и лечение.
+                        Услуги врача-стоматолога затрагивают не только лечение кариеса, но и пульпита, а также включают широкий спектр смежных профессий. Подготовка к сложным лечениям может потребовать выполнить комбинацию действий. Многие из них доступны сразу моих рабочих местах, но иногда необходимое оборудование доступно только в других медицинских учреждениях.
+                    </p>
+                    <p className="grey-text text-darken-3 lighten-3">
+                        Вы можете ознакомиться со списком всех услуг, чтобы иметь представление о возможных методах лечения.
                     </p>
                 </section>
 
                 <section className="cardlink-container">
-                    <ServiceCard serviceName="Диагностика" to="/services/diagnostics" image="./images/icons/caries-96.png" serviceTasks={[{ name: "Выявление кариеса" }, { name: "Выяснение причин боли" }]}></ServiceCard>
+                    <ServiceCard serviceName="Диагностика" to="/services/diagnostics" image="./images/icons/caries-96.png" serviceTasks={[{ name: "Панорамный снимок" }, { name: "Компьютерная томография" }, { name: "Аксиография" }, { name: "Компьютерное моделирование улыбки" }, { name: "Анализ окклюзии" }]}></ServiceCard>
                     <ServiceCard serviceName="Терапия" to="/services/therapy" image="./images/icons/pulpitis-96.png" serviceTasks={[{ name: "Пломбы" }, { name: "Кариес" }, { name: "Пульпит" }, { name: "Периодонтит" }]}></ServiceCard>
                     <ServiceCard serviceName="Ортопедия" to="/services/orthopedics" image="./images/icons/crown-96.png" serviceTasks={[{ name: "Восстановление зубов" }, { name: "Коронки" }, { name: "Протезы" }, { name: "Культевые вкладки" }, { name: "Накладки" }]}></ServiceCard>
                     <ServiceCard serviceName="Хирургия" to="/services/surgery" image="./images/icons/extraction-96.png" serviceTasks={[{ name: "Удаление" }, { name: "Вестибулопластика" }, { name: "Френулопластика" }]}></ServiceCard>

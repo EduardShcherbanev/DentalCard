@@ -49,7 +49,7 @@ export default class Header extends React.Component {
                         <p><a href="mailto:fireshock2@gmail.com"><Icon tiny>email</Icon> fireshock2@gmail.com</a></p>
                     </div>
                 </div>
-                <Navbar brand="Dental Card" right className="primary" style={{ width: "100%", top: "0", position: this.state.scrollingLock ? "fixed" : "relative" }}>
+                <Navbar brand="Доктор Диана" right className="primary" style={{ width: "100%", top: "0", position: this.state.scrollingLock ? "fixed" : "relative" }}>
                     <li><Link to="/">Главная</Link></li>
                     <li><Link to="/about">Обо мне</Link></li>
                     <li><Link to="/services">Услуги</Link></li>
