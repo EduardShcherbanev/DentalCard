@@ -502,7 +502,7 @@ var _propTypes = __webpack_require__(1);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _constants = __webpack_require__(9);
+var _constants = __webpack_require__(10);
 
 var _constants2 = _interopRequireDefault(_constants);
 
@@ -661,49 +661,6 @@ module.exports = emptyFunction;
 
 /***/ }),
 /* 9 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = {
-  STYLES: ['large', 'floating', 'flat'],
-  WAVES: ['light', 'red', 'yellow', 'orange', 'purple', 'green', 'teal'],
-  SIZES: ['s', 'm', 'l', 'xl'],
-  PLACEMENTS: ['left', 'center', 'right'],
-  SCALES: ['big', 'small'],
-  ICON_SIZES: ['tiny', 'small', 'medium', 'large']
-};
-
-/***/ }),
-/* 10 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.resetID = resetID;
-exports.default = idgen;
-var id = 0;
-
-function resetID() {
-  id = 0;
-}
-
-function idgen() {
-  var oldId = id;
-  id += 1;
-  return oldId;
-}
-
-/***/ }),
-/* 11 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -926,6 +883,49 @@ exports.Table = _Table2.default;
 exports.Tabs = _Tabs2.default;
 exports.Tag = _Tag2.default;
 exports.Toast = _Toast2.default;
+
+/***/ }),
+/* 10 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = {
+  STYLES: ['large', 'floating', 'flat'],
+  WAVES: ['light', 'red', 'yellow', 'orange', 'purple', 'green', 'teal'],
+  SIZES: ['s', 'm', 'l', 'xl'],
+  PLACEMENTS: ['left', 'center', 'right'],
+  SCALES: ['big', 'small'],
+  ICON_SIZES: ['tiny', 'small', 'medium', 'large']
+};
+
+/***/ }),
+/* 11 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.resetID = resetID;
+exports.default = idgen;
+var id = 0;
+
+function resetID() {
+  id = 0;
+}
+
+function idgen() {
+  var oldId = id;
+  id += 1;
+  return oldId;
+}
 
 /***/ }),
 /* 12 */
@@ -1248,7 +1248,7 @@ var _classnames = __webpack_require__(2);
 
 var _classnames2 = _interopRequireDefault(_classnames);
 
-var _constants = __webpack_require__(9);
+var _constants = __webpack_require__(10);
 
 var _constants2 = _interopRequireDefault(_constants);
 
@@ -2423,7 +2423,7 @@ var _propTypes = __webpack_require__(1);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _constants = __webpack_require__(9);
+var _constants = __webpack_require__(10);
 
 var _constants2 = _interopRequireDefault(_constants);
 
@@ -2435,7 +2435,7 @@ var _Icon = __webpack_require__(6);
 
 var _Icon2 = _interopRequireDefault(_Icon);
 
-var _idgen = __webpack_require__(10);
+var _idgen = __webpack_require__(11);
 
 var _idgen2 = _interopRequireDefault(_idgen);
 
@@ -25946,6 +25946,8 @@ var _route = __webpack_require__(160);
 
 var _route2 = _interopRequireDefault(_route);
 
+var _reactMaterialize = __webpack_require__(9);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -25973,7 +25975,50 @@ var App = function (_React$Component) {
                     'div',
                     null,
                     _react2.default.createElement(_header2.default, null),
-                    _react2.default.createElement(_route2.default, null)
+                    _react2.default.createElement(_route2.default, null),
+                    _react2.default.createElement(
+                        'footer',
+                        null,
+                        _react2.default.createElement('hr', null),
+                        _react2.default.createElement(
+                            'p',
+                            null,
+                            '\u0412\u0440\u0430\u0447-\u0441\u0442\u043E\u043C\u0430\u0442\u043E\u043B\u043E\u0433 \u043E\u0440\u0442\u043E\u043F\u0435\u0434, \u0445\u0438\u0440\u0443\u0440\u0433, \u0442\u0435\u0440\u0430\u043F\u0435\u0432\u0442'
+                        ),
+                        _react2.default.createElement(
+                            'p',
+                            null,
+                            '\u0413\u0435\u0432\u043E\u0440\u043A\u044F\u043D \u0414\u0438\u0430\u043D\u0430 \u0413\u0435\u0432\u043E\u0440\u043A\u043E\u0432\u043D\u0430'
+                        ),
+                        _react2.default.createElement(
+                            'p',
+                            null,
+                            _react2.default.createElement(
+                                'a',
+                                { href: 'tel:+7 926 191-23-94' },
+                                _react2.default.createElement(
+                                    _reactMaterialize.Icon,
+                                    { tiny: true },
+                                    'phone'
+                                ),
+                                ' +7 926 191-23-94'
+                            )
+                        ),
+                        _react2.default.createElement(
+                            'p',
+                            null,
+                            _react2.default.createElement(
+                                'a',
+                                { href: 'mailto:fireshock2@gmail.com' },
+                                _react2.default.createElement(
+                                    _reactMaterialize.Icon,
+                                    { tiny: true },
+                                    'email'
+                                ),
+                                ' fireshock2@gmail.com'
+                            )
+                        )
+                    )
                 )
             );
         }
@@ -26008,7 +26053,7 @@ var _propTypes2 = _interopRequireDefault(_propTypes);
 
 var _reactRouterDom = __webpack_require__(13);
 
-var _reactMaterialize = __webpack_require__(11);
+var _reactMaterialize = __webpack_require__(9);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -28562,7 +28607,7 @@ var _classnames = __webpack_require__(2);
 
 var _classnames2 = _interopRequireDefault(_classnames);
 
-var _constants = __webpack_require__(9);
+var _constants = __webpack_require__(10);
 
 var _constants2 = _interopRequireDefault(_constants);
 
@@ -28570,7 +28615,7 @@ var _Icon = __webpack_require__(6);
 
 var _Icon2 = _interopRequireDefault(_Icon);
 
-var _idgen = __webpack_require__(10);
+var _idgen = __webpack_require__(11);
 
 var _idgen2 = _interopRequireDefault(_idgen);
 
@@ -29354,7 +29399,7 @@ var _classnames = __webpack_require__(2);
 
 var _classnames2 = _interopRequireDefault(_classnames);
 
-var _constants = __webpack_require__(9);
+var _constants = __webpack_require__(10);
 
 var _constants2 = _interopRequireDefault(_constants);
 
@@ -29956,7 +30001,7 @@ var _propTypes = __webpack_require__(1);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _idgen = __webpack_require__(10);
+var _idgen = __webpack_require__(11);
 
 var _idgen2 = _interopRequireDefault(_idgen);
 
@@ -30214,11 +30259,11 @@ var _classnames = __webpack_require__(2);
 
 var _classnames2 = _interopRequireDefault(_classnames);
 
-var _idgen = __webpack_require__(10);
+var _idgen = __webpack_require__(11);
 
 var _idgen2 = _interopRequireDefault(_idgen);
 
-var _constants = __webpack_require__(9);
+var _constants = __webpack_require__(10);
 
 var _constants2 = _interopRequireDefault(_constants);
 
@@ -30801,7 +30846,7 @@ var _classnames = __webpack_require__(2);
 
 var _classnames2 = _interopRequireDefault(_classnames);
 
-var _idgen = __webpack_require__(10);
+var _idgen = __webpack_require__(11);
 
 var _idgen2 = _interopRequireDefault(_idgen);
 
@@ -31943,7 +31988,7 @@ var _propTypes = __webpack_require__(1);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _idgen = __webpack_require__(10);
+var _idgen = __webpack_require__(11);
 
 var _idgen2 = _interopRequireDefault(_idgen);
 
@@ -32291,7 +32336,7 @@ var _classnames = __webpack_require__(2);
 
 var _classnames2 = _interopRequireDefault(_classnames);
 
-var _constants = __webpack_require__(9);
+var _constants = __webpack_require__(10);
 
 var _constants2 = _interopRequireDefault(_constants);
 
@@ -32718,7 +32763,7 @@ var _propTypes = __webpack_require__(1);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _idgen = __webpack_require__(10);
+var _idgen = __webpack_require__(11);
 
 var _idgen2 = _interopRequireDefault(_idgen);
 
@@ -33198,7 +33243,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactMaterialize = __webpack_require__(11);
+var _reactMaterialize = __webpack_require__(9);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -33485,7 +33530,7 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactRouterDom = __webpack_require__(13);
 
-var _reactMaterialize = __webpack_require__(11);
+var _reactMaterialize = __webpack_require__(9);
 
 var _serviceCard = __webpack_require__(167);
 
@@ -33642,7 +33687,7 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactRouterDom = __webpack_require__(13);
 
-var _reactMaterialize = __webpack_require__(11);
+var _reactMaterialize = __webpack_require__(9);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -33666,21 +33711,21 @@ var ServiceCard = function (_React$Component) {
         value: function render() {
             return _react2.default.createElement(
                 _reactRouterDom.Link,
-                { to: this.props.to },
+                { to: this.props.to, className: 'cardlink' },
                 _react2.default.createElement(
                     _reactMaterialize.Card,
-                    { className: 'hoverable primary lighten-5 cardlink', title: this.props.serviceName },
+                    { className: 'hoverable primary lighten-5', title: this.props.serviceName },
                     _react2.default.createElement(
                         _reactMaterialize.Row,
                         null,
                         _react2.default.createElement(
                             _reactMaterialize.Col,
-                            { s: 6, m: 6, l: 6 },
+                            { s: 4, m: 4, l: 4 },
                             _react2.default.createElement('img', { src: this.props.image, alt: '' })
                         ),
                         _react2.default.createElement(
                             _reactMaterialize.Col,
-                            { s: 6, m: 6, l: 6 },
+                            { s: 8, m: 8, l: 8 },
                             this.props.serviceTasks.map(function (item) {
                                 return _react2.default.createElement(
                                     'p',
@@ -33719,7 +33764,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactMaterialize = __webpack_require__(11);
+var _reactMaterialize = __webpack_require__(9);
 
 var _serviceItemCard = __webpack_require__(169);
 
@@ -33764,35 +33809,11 @@ var Diagnostics = function (_React$Component) {
                 _react2.default.createElement(
                     "section",
                     { className: "cardlink-container" },
-                    _react2.default.createElement(
-                        _reactMaterialize.Row,
-                        null,
-                        _react2.default.createElement(
-                            _reactMaterialize.Col,
-                            { s: 12, m: 6, l: 4 },
-                            _react2.default.createElement(_serviceItemCard2.default, { name: "\u041F\u0430\u043D\u043E\u0440\u0430\u043C\u043D\u044B\u0439 \u0441\u043D\u0438\u043C\u043E\u043A", to: "/services/diagnostics/panoramic", image: "../images/services/panoramic.jpg", description: "\u041E\u0440\u0442\u043E\u043F\u0430\u043D\u0442\u043E\u043C\u043E\u0433\u0440\u0430\u0444\u0438\u044F \u0438\u043B\u0438 \u043F\u0430\u043D\u043E\u0440\u0430\u043C\u043D\u044B\u0439 \u0441\u043D\u0438\u043C\u043E\u043A \u0437\u0443\u0431\u043E\u0432 - \u044D\u0442\u043E \u0440\u0435\u043D\u0442\u0433\u0435\u043D\u043E\u0432\u0441\u043A\u0438\u0439 \u0441\u043D\u0438\u043C\u043E\u043A \u0432\u0435\u0440\u0445\u043D\u0435\u0439 \u0438 \u043D\u0438\u0436\u043D\u0435\u0439 \u0447\u0435\u043B\u044E\u0441\u0442\u0435\u0439, \u0432\u043A\u043B\u044E\u0447\u0430\u044F \u0432\u0435\u0440\u0445\u043D\u0435-\u0447\u0435\u043B\u044E\u0441\u0442\u043D\u043E\u0439 \u0441\u0443\u0441\u0442\u0430\u0432, \u043F\u0440\u0438\u0434\u0430\u0442\u043E\u0447\u043D\u044B\u0435 \u043F\u0430\u0437\u0443\u0445\u0438 \u043D\u043E\u0441\u0430." })
-                        ),
-                        _react2.default.createElement(
-                            _reactMaterialize.Col,
-                            { s: 12, m: 6, l: 4 },
-                            _react2.default.createElement(_serviceItemCard2.default, { name: "\u041A\u043E\u043C\u043F\u044C\u044E\u0442\u0435\u0440\u043D\u0430\u044F \u0442\u043E\u043C\u043E\u0433\u0440\u0430\u0444\u0438\u044F", to: "/services/diagnostics/tomography", image: "../images/services/tomography.jpg", description: "\u041F\u0440\u0435\u0434\u0441\u0442\u0430\u0432\u043B\u044F\u0435\u0442 \u0441\u043E\u0431\u043E\u0439 \u0442\u0440\u0435\u0445\u043C\u0435\u0440\u043D\u043E\u0435 \u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u0435, \u043F\u043E\u0437\u0432\u043E\u043B\u044F\u044E\u0449\u0435\u0435 \u0441\u043E \u0432\u0441\u0435\u0445 \u0441\u0442\u043E\u0440\u043E\u043D \u0440\u0430\u0441\u0441\u043C\u043E\u0442\u0440\u0435\u0442\u044C \u043D\u0435 \u0442\u043E\u043B\u044C\u043A\u043E \u0437\u0443\u0431, \u043D\u043E \u0438 \u043E\u043A\u0440\u0443\u0436\u0430\u044E\u0449\u0438\u0435 \u0435\u0433\u043E \u0442\u043A\u0430\u043D\u0438. \u0411\u043B\u0430\u0433\u043E\u0434\u0430\u0440\u044F \u0441\u043D\u0438\u043C\u043A\u0443 \u0432\u0440\u0430\u0447\u0443 \u0441\u0442\u0430\u043D\u043E\u0432\u044F\u0442\u0441\u044F \u0434\u043E\u0441\u0442\u0443\u043F\u043D\u044B \u0434\u0435\u0442\u0430\u043B\u044C\u043D\u0430\u044F \u043E\u0446\u0435\u043D\u043A\u0430 \u0441\u043E\u0441\u0442\u043E\u044F\u043D\u0438\u044F \u0442\u043A\u0430\u043D\u0435\u0439 \u0447\u0435\u043B\u044E\u0441\u0442\u0438 \u0438 \u0432\u043E\u0437\u043C\u043E\u0436\u043D\u043E\u0441\u0442\u044C \u0432\u044B\u044F\u0432\u043B\u0435\u043D\u0438\u044F \u0430\u043D\u0430\u0442\u043E\u043C\u0438\u0447\u0435\u0441\u043A\u0438\u0445 \u043E\u0441\u043E\u0431\u0435\u043D\u043D\u043E\u0441\u0442\u0435\u0439 \u0438 \u0430\u043D\u043E\u043C\u0430\u043B\u0438\u0439 \u043A\u043E\u0440\u043D\u0435\u0439 \u0438 \u043A\u043E\u0440\u043D\u0435\u0432\u044B\u0445 \u043A\u0430\u043D\u0430\u043B\u043E\u0432." })
-                        ),
-                        _react2.default.createElement(
-                            _reactMaterialize.Col,
-                            { s: 12, m: 6, l: 4 },
-                            _react2.default.createElement(_serviceItemCard2.default, { name: "\u041A\u043E\u043C\u043F\u044C\u044E\u0442\u0435\u0440\u043D\u043E\u0435 \u043C\u043E\u0434\u0435\u043B\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435 \u0443\u043B\u044B\u0431\u043A\u0438", to: "/services/diagnostics/design", image: "../images/services/design.jpg", description: "\u041C\u0435\u0442\u043E\u0434\u0438\u043A\u0430 Digital Smile Design (DSD) \u2013 \u0446\u0438\u0444\u0440\u043E\u0432\u043E\u0435 \u043C\u043E\u0434\u0435\u043B\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435 \u0443\u043B\u044B\u0431\u043A\u0438, \u043F\u043E\u043C\u043E\u0433\u0430\u0435\u0442 \u0443\u0432\u0438\u0434\u0435\u0442\u044C \u043A\u043E\u043D\u0435\u0447\u043D\u044B\u0439 \u0440\u0435\u0437\u0443\u043B\u044C\u0442\u0430\u0442 \u043F\u043B\u0430\u043D\u0438\u0440\u0443\u0435\u043C\u044B\u0445 \u0441\u0442\u043E\u043C\u0430\u0442\u043E\u043B\u043E\u0433\u0438\u0447\u0435\u0441\u043A\u0438\u0445 \u043F\u0440\u043E\u0446\u0435\u0434\u0443\u0440 \u0435\u0449\u0435 \u0434\u043E \u043D\u0430\u0447\u0430\u043B\u0430 \u043B\u0435\u0447\u0435\u043D\u0438\u044F." })
-                        ),
-                        _react2.default.createElement(
-                            _reactMaterialize.Col,
-                            { s: 12, m: 6, l: 4 },
-                            _react2.default.createElement(_serviceItemCard2.default, { name: "\u0410\u043A\u0441\u0438\u043E\u0433\u0440\u0430\u0444\u0438\u044F", to: "/services/diagnostics/axiography", image: "../images/services/axiography.jpg", description: "\u0420\u0435\u0433\u0438\u0441\u0442\u0440\u0430\u0446\u0438\u044F \u0434\u0432\u0438\u0436\u0435\u043D\u0438\u0439 \u0447\u0435\u043B\u044E\u0441\u0442\u0438 \u0432\u043E \u0432\u0440\u0435\u043C\u044F \u0440\u0430\u0437\u043B\u0438\u0447\u043D\u044B\u0445 \u0434\u0435\u0439\u0441\u0442\u0432\u0438\u0439 \u2013 \u0436\u0435\u0432\u0430\u043D\u0438\u044F, \u0433\u043B\u043E\u0442\u0430\u043D\u0438\u044F, \u0430 \u0442\u0430\u043A\u0436\u0435 \u0432 \u0441\u043E\u0441\u0442\u043E\u044F\u043D\u0438\u0438 \u043F\u043E\u043A\u043E\u044F." })
-                        ),
-                        _react2.default.createElement(
-                            _reactMaterialize.Col,
-                            { s: 12, m: 6, l: 4 },
-                            _react2.default.createElement(_serviceItemCard2.default, { name: "\u0410\u043D\u0430\u043B\u0438\u0437 \u043E\u043A\u043A\u043B\u044E\u0437\u0438\u0438", to: "/services/diagnostics/occlusion", image: "../images/services/occlusion.jpg", description: "\u0427\u0430\u0441\u0442\u043D\u044B\u0439 \u0432\u0438\u0434 \u0441\u043C\u044B\u043A\u0430\u043D\u0438\u044F \u0437\u0443\u0431\u043D\u044B\u0445 \u0440\u044F\u0434\u043E\u0432, \u043E\u0437\u043D\u0430\u0447\u0430\u044E\u0449\u0438\u0439 \u043F\u043E\u043B\u043E\u0436\u0435\u043D\u0438\u0435 \u043D\u0438\u0436\u043D\u0435\u0439 \u0447\u0435\u043B\u044E\u0441\u0442\u0438, \u043F\u0440\u0438 \u043A\u043E\u0442\u043E\u0440\u043E\u043C \u0442\u043E \u0438\u043B\u0438 \u0438\u043D\u043E\u0435 \u043A\u043E\u043B\u0438\u0447\u0435\u0441\u0442\u0432\u043E \u0437\u0443\u0431\u043E\u0432 \u043D\u0430\u0445\u043E\u0434\u0438\u0442\u0441\u044F \u0432 \u043A\u043E\u043D\u0442\u0430\u043A\u0442\u0435." })
-                        )
-                    )
+                    _react2.default.createElement(_serviceItemCard2.default, { name: "\u041F\u0430\u043D\u043E\u0440\u0430\u043C\u043D\u044B\u0439 \u0441\u043D\u0438\u043C\u043E\u043A", to: "/services/diagnostics/panoramic", image: "../images/services/panoramic.jpg", description: "\u041E\u0440\u0442\u043E\u043F\u0430\u043D\u0442\u043E\u043C\u043E\u0433\u0440\u0430\u0444\u0438\u044F \u0438\u043B\u0438 \u043F\u0430\u043D\u043E\u0440\u0430\u043C\u043D\u044B\u0439 \u0441\u043D\u0438\u043C\u043E\u043A \u0437\u0443\u0431\u043E\u0432 - \u044D\u0442\u043E \u0440\u0435\u043D\u0442\u0433\u0435\u043D\u043E\u0432\u0441\u043A\u0438\u0439 \u0441\u043D\u0438\u043C\u043E\u043A \u0432\u0435\u0440\u0445\u043D\u0435\u0439 \u0438 \u043D\u0438\u0436\u043D\u0435\u0439 \u0447\u0435\u043B\u044E\u0441\u0442\u0435\u0439, \u0432\u043A\u043B\u044E\u0447\u0430\u044F \u0432\u0435\u0440\u0445\u043D\u0435-\u0447\u0435\u043B\u044E\u0441\u0442\u043D\u043E\u0439 \u0441\u0443\u0441\u0442\u0430\u0432, \u043F\u0440\u0438\u0434\u0430\u0442\u043E\u0447\u043D\u044B\u0435 \u043F\u0430\u0437\u0443\u0445\u0438 \u043D\u043E\u0441\u0430." }),
+                    _react2.default.createElement(_serviceItemCard2.default, { name: "\u041A\u043E\u043C\u043F\u044C\u044E\u0442\u0435\u0440\u043D\u0430\u044F \u0442\u043E\u043C\u043E\u0433\u0440\u0430\u0444\u0438\u044F", to: "/services/diagnostics/tomography", image: "../images/services/tomography.jpg", description: "\u041F\u0440\u0435\u0434\u0441\u0442\u0430\u0432\u043B\u044F\u0435\u0442 \u0441\u043E\u0431\u043E\u0439 \u0442\u0440\u0435\u0445\u043C\u0435\u0440\u043D\u043E\u0435 \u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u0435, \u043F\u043E\u0437\u0432\u043E\u043B\u044F\u044E\u0449\u0435\u0435 \u0441\u043E \u0432\u0441\u0435\u0445 \u0441\u0442\u043E\u0440\u043E\u043D \u0440\u0430\u0441\u0441\u043C\u043E\u0442\u0440\u0435\u0442\u044C \u043D\u0435 \u0442\u043E\u043B\u044C\u043A\u043E \u0437\u0443\u0431, \u043D\u043E \u0438 \u043E\u043A\u0440\u0443\u0436\u0430\u044E\u0449\u0438\u0435 \u0435\u0433\u043E \u0442\u043A\u0430\u043D\u0438. \u0411\u043B\u0430\u0433\u043E\u0434\u0430\u0440\u044F \u0441\u043D\u0438\u043C\u043A\u0443 \u0432\u0440\u0430\u0447\u0443 \u0441\u0442\u0430\u043D\u043E\u0432\u044F\u0442\u0441\u044F \u0434\u043E\u0441\u0442\u0443\u043F\u043D\u044B \u0434\u0435\u0442\u0430\u043B\u044C\u043D\u0430\u044F \u043E\u0446\u0435\u043D\u043A\u0430 \u0441\u043E\u0441\u0442\u043E\u044F\u043D\u0438\u044F \u0442\u043A\u0430\u043D\u0435\u0439 \u0447\u0435\u043B\u044E\u0441\u0442\u0438 \u0438 \u0432\u043E\u0437\u043C\u043E\u0436\u043D\u043E\u0441\u0442\u044C \u0432\u044B\u044F\u0432\u043B\u0435\u043D\u0438\u044F \u0430\u043D\u0430\u0442\u043E\u043C\u0438\u0447\u0435\u0441\u043A\u0438\u0445 \u043E\u0441\u043E\u0431\u0435\u043D\u043D\u043E\u0441\u0442\u0435\u0439 \u0438 \u0430\u043D\u043E\u043C\u0430\u043B\u0438\u0439 \u043A\u043E\u0440\u043D\u0435\u0439 \u0438 \u043A\u043E\u0440\u043D\u0435\u0432\u044B\u0445 \u043A\u0430\u043D\u0430\u043B\u043E\u0432." }),
+                    _react2.default.createElement(_serviceItemCard2.default, { name: "\u041A\u043E\u043C\u043F\u044C\u044E\u0442\u0435\u0440\u043D\u043E\u0435 \u043C\u043E\u0434\u0435\u043B\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435 \u0443\u043B\u044B\u0431\u043A\u0438", to: "/services/diagnostics/design", image: "../images/services/design.jpg", description: "\u041C\u0435\u0442\u043E\u0434\u0438\u043A\u0430 Digital Smile Design (DSD) \u2013 \u0446\u0438\u0444\u0440\u043E\u0432\u043E\u0435 \u043C\u043E\u0434\u0435\u043B\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435 \u0443\u043B\u044B\u0431\u043A\u0438, \u043F\u043E\u043C\u043E\u0433\u0430\u0435\u0442 \u0443\u0432\u0438\u0434\u0435\u0442\u044C \u043A\u043E\u043D\u0435\u0447\u043D\u044B\u0439 \u0440\u0435\u0437\u0443\u043B\u044C\u0442\u0430\u0442 \u043F\u043B\u0430\u043D\u0438\u0440\u0443\u0435\u043C\u044B\u0445 \u0441\u0442\u043E\u043C\u0430\u0442\u043E\u043B\u043E\u0433\u0438\u0447\u0435\u0441\u043A\u0438\u0445 \u043F\u0440\u043E\u0446\u0435\u0434\u0443\u0440 \u0435\u0449\u0435 \u0434\u043E \u043D\u0430\u0447\u0430\u043B\u0430 \u043B\u0435\u0447\u0435\u043D\u0438\u044F." }),
+                    _react2.default.createElement(_serviceItemCard2.default, { name: "\u0410\u043A\u0441\u0438\u043E\u0433\u0440\u0430\u0444\u0438\u044F", to: "/services/diagnostics/axiography", image: "../images/services/axiography.jpg", description: "\u0420\u0435\u0433\u0438\u0441\u0442\u0440\u0430\u0446\u0438\u044F \u0434\u0432\u0438\u0436\u0435\u043D\u0438\u0439 \u0447\u0435\u043B\u044E\u0441\u0442\u0438 \u0432\u043E \u0432\u0440\u0435\u043C\u044F \u0440\u0430\u0437\u043B\u0438\u0447\u043D\u044B\u0445 \u0434\u0435\u0439\u0441\u0442\u0432\u0438\u0439 \u2013 \u0436\u0435\u0432\u0430\u043D\u0438\u044F, \u0433\u043B\u043E\u0442\u0430\u043D\u0438\u044F, \u0430 \u0442\u0430\u043A\u0436\u0435 \u0432 \u0441\u043E\u0441\u0442\u043E\u044F\u043D\u0438\u0438 \u043F\u043E\u043A\u043E\u044F." }),
+                    _react2.default.createElement(_serviceItemCard2.default, { name: "\u0410\u043D\u0430\u043B\u0438\u0437 \u043E\u043A\u043A\u043B\u044E\u0437\u0438\u0438", to: "/services/diagnostics/occlusion", image: "../images/services/occlusion.jpg", description: "\u0427\u0430\u0441\u0442\u043D\u044B\u0439 \u0432\u0438\u0434 \u0441\u043C\u044B\u043A\u0430\u043D\u0438\u044F \u0437\u0443\u0431\u043D\u044B\u0445 \u0440\u044F\u0434\u043E\u0432, \u043E\u0437\u043D\u0430\u0447\u0430\u044E\u0449\u0438\u0439 \u043F\u043E\u043B\u043E\u0436\u0435\u043D\u0438\u0435 \u043D\u0438\u0436\u043D\u0435\u0439 \u0447\u0435\u043B\u044E\u0441\u0442\u0438, \u043F\u0440\u0438 \u043A\u043E\u0442\u043E\u0440\u043E\u043C \u0442\u043E \u0438\u043B\u0438 \u0438\u043D\u043E\u0435 \u043A\u043E\u043B\u0438\u0447\u0435\u0441\u0442\u0432\u043E \u0437\u0443\u0431\u043E\u0432 \u043D\u0430\u0445\u043E\u0434\u0438\u0442\u0441\u044F \u0432 \u043A\u043E\u043D\u0442\u0430\u043A\u0442\u0435." })
                 )
             );
         }
@@ -33823,7 +33844,7 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactRouterDom = __webpack_require__(13);
 
-var _reactMaterialize = __webpack_require__(11);
+var _reactMaterialize = __webpack_require__(9);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -33847,14 +33868,14 @@ var ServiceItemCard = function (_React$Component) {
         value: function render() {
             return _react2.default.createElement(
                 _reactRouterDom.Link,
-                { to: this.props.to },
+                { to: this.props.to, className: 'cardlink' },
                 _react2.default.createElement(
                     _reactMaterialize.Card,
                     { header: _react2.default.createElement(
                             _reactMaterialize.CardTitle,
                             { image: this.props.image },
                             this.props.name
-                        ), className: 'hoverable primary lighten-5 cardlink' },
+                        ), className: 'hoverable primary lighten-5' },
                     this.props.description
                 )
             );
