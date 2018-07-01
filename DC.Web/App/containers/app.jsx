@@ -13,8 +13,7 @@ export default class App extends React.Component {
                     <Header />
                     <Routing />
 
-                    <footer>
-                        <hr/>
+                    <footer className="primary dark">
                         <p>Врач-стоматолог ортопед, хирург, терапевт</p>
                         <p>Геворкян Диана Геворковна</p>
                         <p><a href="tel:+7 926 191-23-94"><Icon tiny>phone</Icon> +7 926 191-23-94</a></p>

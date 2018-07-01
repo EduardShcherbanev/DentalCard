@@ -6,7 +6,7 @@ export default class ServiceItemCard extends React.Component {
     render() {
         return (
             <Link to={this.props.to} className="cardlink">
-                <Card header={<CardTitle image={this.props.image}>{this.props.name}</CardTitle>} className="hoverable primary lighten-5">
+                <Card header={<CardTitle image={this.props.image}>{this.props.name}</CardTitle>} className="hoverable">
                     {this.props.description}
                 </Card>
             </Link>

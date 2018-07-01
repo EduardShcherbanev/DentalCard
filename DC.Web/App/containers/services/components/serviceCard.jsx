@@ -6,7 +6,7 @@ export default class ServiceCard extends React.Component {
     render() {
         return (
             <Link to={this.props.to} className="cardlink">
-                <Card className="hoverable primary lighten-5" title={this.props.serviceName}>
+                <Card className="hoverable" title={this.props.serviceName}>
                     <Row>
                         <Col s={4} m={4} l={4}>
                             <img src={this.props.image} alt="" />

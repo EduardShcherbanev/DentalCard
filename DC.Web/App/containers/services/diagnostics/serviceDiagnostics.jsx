@@ -7,8 +7,8 @@ export default class Diagnostics extends React.Component {
         return (
             <div>
                 <section>
-                    <div className="row primary-text">
-                        <h1>Диагностика</h1>
+                    <div>
+                        <h3 className="primary-text center">Диагностика</h3>
                     </div>
                 </section>
 

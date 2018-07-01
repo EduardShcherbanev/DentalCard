@@ -7,17 +7,15 @@ export default class Services extends React.Component {
     render() {
         return (
             <div>
-                <div className="section">
-                    <div className="row primary-text">
-                        <h1>Услуги</h1>
-                    </div>
-                </div>
+                <section>
+                    <h3 className="primary-text center">Услуги</h3>
+                </section>
 
                 <section>
-                    <p className="grey-text text-darken-3 lighten-3">
+                    <p>
                         Услуги врача-стоматолога затрагивают не только лечение кариеса, но и пульпита, а также включают широкий спектр смежных профессий. Подготовка к сложным лечениям может потребовать выполнить комбинацию действий. Многие из них доступны сразу моих рабочих местах, но иногда необходимое оборудование доступно только в других медицинских учреждениях.
                     </p>
-                    <p className="grey-text text-darken-3 lighten-3">
+                    <p>
                         Вы можете ознакомиться со списком всех услуг, чтобы иметь представление о возможных методах лечения.
                     </p>
                 </section>
