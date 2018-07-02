@@ -1,5 +1,5 @@
 ﻿import React from 'react';
-import { Row, Col } from "react-materialize";
+import { Row, Col, Breadcrumb, MenuItem } from "react-materialize";
 import ServiceItemCard from "../components/serviceItemCard.jsx";
 
 export default class Diagnostics extends React.Component {
@@ -8,7 +8,7 @@ export default class Diagnostics extends React.Component {
             <div>
                 <section>
                     <div>
-                        <h3 className="primary-text center">Диагностика</h3>
+                        <h3 className="secondary-text center">Диагностика</h3>
                     </div>
                 </section>
 

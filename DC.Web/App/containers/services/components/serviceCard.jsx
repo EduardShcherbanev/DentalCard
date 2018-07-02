@@ -8,11 +8,11 @@ export default class ServiceCard extends React.Component {
             <Link to={this.props.to} className="cardlink">
                 <Card className="hoverable" title={this.props.serviceName}>
                     <Row>
-                        <Col s={4} m={4} l={4}>
+                        <Col s={5} m={5} l={5}>
                             <img src={this.props.image} alt="" />
                         </Col>
-                        <Col s={8} m={8} l={8}>
-                            {this.props.serviceTasks.map(item => (<p className="primary-text" key={item.name}>— {item.name}</p>))}
+                        <Col s={7} m={7} l={7}>
+                            {this.props.serviceTasks.map(item => (<p className="card-description" key={item.name}>— {item.name}</p>))}
                         </Col>
                     </Row>
                 </Card>

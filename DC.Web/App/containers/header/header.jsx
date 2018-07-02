@@ -43,10 +43,10 @@ export default class Header extends React.Component {
         return (
             <div style={{ marginBottom: this.state.scrollingLock ? "64px" : "0" }}>
                 <div className="hide-on-med-and-down primary dark">
-                    <img className="brand-logo responsive-img" src="./favicon.png" alt="" />
-                    <div className="right valign-wrapper">
-                        <p><a href="tel:+7 926 191-23-94"><Icon tiny>phone</Icon> +7 926 191-23-94</a></p>
-                        <p><a href="mailto:fireshock2@gmail.com"><Icon tiny>email</Icon> fireshock2@gmail.com</a></p>
+                    <img className="brand-logo responsive-img" src="favicon.png" alt="" />
+                    <div className="right">
+                        <p><a className="white-text" href="tel:+7 926 191-23-94"><Icon tiny>phone</Icon> +7 926 191-23-94</a></p>
+                        <p><a className="white-text" href="mailto:fireshock2@gmail.com"><Icon tiny>email</Icon> fireshock2@gmail.com</a></p>
                     </div>
                 </div>
                 <Navbar brand="Доктор Диана" right className="primary" style={{ width: "100%", top: "0", position: this.state.scrollingLock ? "fixed" : "relative" }}>
