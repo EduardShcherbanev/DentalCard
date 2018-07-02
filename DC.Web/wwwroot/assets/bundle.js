@@ -26111,90 +26111,94 @@ var Header = function (_React$Component) {
         value: function render() {
             return _react2.default.createElement(
                 'div',
-                { style: { marginBottom: this.state.scrollingLock ? "64px" : "0" } },
+                { className: 'main', style: { marginBottom: this.state.scrollingLock ? "64px" : "0" } },
                 _react2.default.createElement(
                     'div',
-                    { className: 'hide-on-med-and-down primary dark' },
-                    _react2.default.createElement('img', { className: 'brand-logo responsive-img', src: 'favicon.png', alt: '' }),
+                    { className: 'main-overlay' },
                     _react2.default.createElement(
                         'div',
-                        { className: 'right' },
+                        { className: 'hide-on-med-and-down' },
+                        _react2.default.createElement('img', { className: 'brand-logo responsive-img', src: 'favicon.png', alt: '' }),
                         _react2.default.createElement(
-                            'p',
+                            'div',
+                            { className: 'right' },
+                            _react2.default.createElement(
+                                'p',
+                                null,
+                                _react2.default.createElement(
+                                    'a',
+                                    { className: 'white-text', href: 'tel:+7 926 191-23-94' },
+                                    _react2.default.createElement(
+                                        _reactMaterialize.Icon,
+                                        { tiny: true },
+                                        'phone'
+                                    ),
+                                    ' +7 926 191-23-94'
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'p',
+                                null,
+                                _react2.default.createElement(
+                                    'a',
+                                    { className: 'white-text', href: 'mailto:fireshock2@gmail.com' },
+                                    _react2.default.createElement(
+                                        _reactMaterialize.Icon,
+                                        { tiny: true },
+                                        'email'
+                                    ),
+                                    ' fireshock2@gmail.com'
+                                )
+                            )
+                        )
+                    ),
+                    _react2.default.createElement(
+                        _reactMaterialize.Navbar,
+                        { brand: '\u0414\u043E\u043A\u0442\u043E\u0440 \u0414\u0438\u0430\u043D\u0430', right: true, className: 'header', style: { width: "100%", top: "0", position: this.state.scrollingLock ? "fixed" : "relative" } },
+                        _react2.default.createElement(
+                            'li',
                             null,
                             _react2.default.createElement(
-                                'a',
-                                { className: 'white-text', href: 'tel:+7 926 191-23-94' },
-                                _react2.default.createElement(
-                                    _reactMaterialize.Icon,
-                                    { tiny: true },
-                                    'phone'
-                                ),
-                                ' +7 926 191-23-94'
+                                _reactRouterDom.Link,
+                                { to: '/' },
+                                '\u0413\u043B\u0430\u0432\u043D\u0430\u044F'
                             )
                         ),
                         _react2.default.createElement(
-                            'p',
+                            'li',
                             null,
                             _react2.default.createElement(
-                                'a',
-                                { className: 'white-text', href: 'mailto:fireshock2@gmail.com' },
-                                _react2.default.createElement(
-                                    _reactMaterialize.Icon,
-                                    { tiny: true },
-                                    'email'
-                                ),
-                                ' fireshock2@gmail.com'
+                                _reactRouterDom.Link,
+                                { to: '/about' },
+                                '\u041E\u0431\u043E \u043C\u043D\u0435'
                             )
-                        )
-                    )
-                ),
-                _react2.default.createElement(
-                    _reactMaterialize.Navbar,
-                    { brand: '\u0414\u043E\u043A\u0442\u043E\u0440 \u0414\u0438\u0430\u043D\u0430', right: true, className: 'primary', style: { width: "100%", top: "0", position: this.state.scrollingLock ? "fixed" : "relative" } },
-                    _react2.default.createElement(
-                        'li',
-                        null,
+                        ),
                         _react2.default.createElement(
-                            _reactRouterDom.Link,
-                            { to: '/' },
-                            '\u0413\u043B\u0430\u0432\u043D\u0430\u044F'
-                        )
-                    ),
-                    _react2.default.createElement(
-                        'li',
-                        null,
+                            'li',
+                            null,
+                            _react2.default.createElement(
+                                _reactRouterDom.Link,
+                                { to: '/services' },
+                                '\u0423\u0441\u043B\u0443\u0433\u0438'
+                            )
+                        ),
                         _react2.default.createElement(
-                            _reactRouterDom.Link,
-                            { to: '/about' },
-                            '\u041E\u0431\u043E \u043C\u043D\u0435'
-                        )
-                    ),
-                    _react2.default.createElement(
-                        'li',
-                        null,
+                            'li',
+                            null,
+                            _react2.default.createElement(
+                                _reactRouterDom.Link,
+                                { to: '/portfolio' },
+                                '\u041C\u043E\u0438 \u0440\u0430\u0431\u043E\u0442\u044B'
+                            )
+                        ),
                         _react2.default.createElement(
-                            _reactRouterDom.Link,
-                            { to: '/services' },
-                            '\u0423\u0441\u043B\u0443\u0433\u0438'
-                        )
-                    ),
-                    _react2.default.createElement(
-                        'li',
-                        null,
-                        _react2.default.createElement(
-                            _reactRouterDom.Link,
-                            { to: '/portfolio' },
-                            '\u041C\u043E\u0438 \u0440\u0430\u0431\u043E\u0442\u044B'
-                        )
-                    ),
-                    _react2.default.createElement(
-                        'li',
-                        null,
-                        _react2.default.createElement(
-                            _reactRouterDom.Link,
-                            { to: '/contacts' },
-                            '\u041A\u043E\u043D\u0442\u0430\u043A\u0442\u044B'
+                            'li',
+                            null,
+                            _react2.default.createElement(
+                                _reactRouterDom.Link,
+                                { to: '/contacts' },
+                                '\u041A\u043E\u043D\u0442\u0430\u043A\u0442\u044B'
+                            )
                         )
                     )
                 )
