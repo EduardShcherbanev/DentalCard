@@ -12,6 +12,7 @@ body {
     background: url(../images/main-background.jpg) no-repeat center;
     background-size: cover;
     position: relative;
+    z-index: 997;
 }
 
 .main-overlay {
@@ -64,10 +65,6 @@ footer {
 
 .brand-logo {
     margin-left: 15px;
-}
-
-nav {
-    z-index: 997;
 }
 
 img.brand-logo {
