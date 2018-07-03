@@ -1,5 +1,5 @@
 ﻿.dropdown-content li > a, .dropdown-content li > span {
-    color: #70503b;
+    color: #6e45e2;
 }
 
 .card .card-description {
@@ -7,7 +7,15 @@
 }
 
 .card .card-title {
-    color: #3b6d70 !important;
+    color: #57a29d !important;
+}
+
+.header-text {
+    background: -moz-linear-gradient(150deg, rgb(136, 211, 206) 0%, rgb(110, 69, 226) 100%);
+    background: -webkit-linear-gradient(150deg, rgb(136, 211, 206) 0%, rgb(110, 69, 226) 100%);
+    background: -ms-linear-gradient(150deg, rgb(136, 211, 206) 0%, rgb(110, 69, 226) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 body {
@@ -15,7 +23,7 @@ body {
 }
 
 footer {
-    background-color: #a07c66 !important;
+    background-color: #a473ff !important;
 }
 
 .text-content {
@@ -23,49 +31,49 @@ footer {
 }
 
 .primary {
-    background-color: #70503b !important;
+    background-color: #6e45e2 !important;
 }
 
     .primary.light {
-        background-color: #a07c66 !important;
+        background-color: #a473ff !important;
     }
 
     .primary.dark {
-        background-color: #432815 !important;
+        background-color: #3217af !important;
     }
 
 .primary-text {
-    color: #70503b !important;
+    color: #6e45e2 !important;
 }
 
     .primary-text.light {
-        color: #a07c66 !important;
+        color: #a473ff !important;
     }
 
     .primary-text.dark {
-        color: #432815 !important;
+        color: #3217af !important;
     }
 
 .secondary {
-    background-color: #3b6d70 !important;
+    background-color: #88d3ce !important;
 }
 
     .secondary.light {
-        background-color: #699b9e !important;
+        background-color: #baffff !important;
     }
 
     .secondary.dark {
-        background-color: #094245 !important;
+        background-color: #57a29d !important;
     }
 
 .secondary-text {
-    color: #3b6d70 !important;
+    color: #88d3ce !important;
 }
 
     .secondary-text.light {
-        color: #699b9e !important;
+        color: #baffff !important;
     }
 
     .secondary-text.dark {
-        color: #094245 !important;
+        color: #57a29d !important;
     }

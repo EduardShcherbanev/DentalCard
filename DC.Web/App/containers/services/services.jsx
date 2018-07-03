@@ -2,15 +2,12 @@
 import { Link } from "react-router-dom";
 import { Button, Dropdown } from "react-materialize";
 import ServiceCard from "./components/serviceCard.jsx";
+import HeadedPage from "../../components/headedPage.jsx";
 
 export default class Services extends React.Component {
     render() {
         return (
-            <div>
-                <section>
-                    <h3 className="secondary-text center">Услуги</h3>
-                </section>
-
+            <HeadedPage header="Услуги">
                 <section>
                     <p>Услуги врача-стоматолога затрагивают не только лечение кариеса, но и пульпита, а также включают широкий спектр смежных профессий. Подготовка к сложным лечениям может потребовать выполнить комбинацию действий. Многие из них доступны сразу моих рабочих местах, но иногда необходимое оборудование доступно только в других медицинских учреждениях.</p>
                     <p>Вы можете ознакомиться со списком всех услуг, чтобы иметь представление о возможных методах лечения.</p>
@@ -35,7 +32,7 @@ export default class Services extends React.Component {
                         <li><Link to="/services/gnathology">Гнатология</Link></li>
                     </Dropdown>
                 </div>
-            </div>
+            </HeadedPage>
         );
     }
 };

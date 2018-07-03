@@ -27,31 +27,26 @@ export default class Header extends React.Component {
                 scrollingLock: true
             });
         } else if (window.scrollY < 236) {
-            if (window.innerWidth > 992) {
-                this.setState({
-                    scrollingLock: false
-                });
-            } else {
-                this.setState({
-                    scrollingLock: true
-                });
-            }
+            this.setState({
+                scrollingLock: false
+            });
         }
     }
 
     render() {
         return (
             <div style={{ marginBottom: this.state.scrollingLock ? "320px" : "0" }}>
-                <div className="main" style={{ width: "100%", top: this.state.scrollingLock ? "-236px" : "0", position: this.state.scrollingLock ? "fixed" : "relative" }}>
-                    <div className="main-overlay">
-                        <div className="header-top hide-on-med-and-down">
-                            <img className="brand-logo responsive-img" src="favicon.png" alt="" />
-                            <div className="right">
-                                <p><a className="white-text" href="tel:+7 926 191-23-94"><Icon tiny>phone</Icon> +7 926 191-23-94</a></p>
-                                <p><a className="white-text" href="mailto:fireshock2@gmail.com"><Icon tiny>email</Icon> fireshock2@gmail.com</a></p>
-                            </div>
+                <div className="header" style={{ width: "100%", top: this.state.scrollingLock ? "-236px" : "0", position: this.state.scrollingLock ? "fixed" : "relative" }}>
+                    <div className="header-overlay">
+                        <div className="header-top">
+                            <img className="header-top-logo" src="favicon.png" alt="" />
+                            <ul className="header-top-contacts">
+                                <li><a className="white-text" href="tel:+7 926 191-23-94"><Icon tiny>phone</Icon> +7 926 191-23-94</a></li>
+                                <li><a className="white-text" href="mailto:fireshock2@gmail.com"><Icon tiny>email</Icon> fireshock2@gmail.com</a></li>
+                                <li><a className="white-text" href="mailto:fireshock2@gmail.com"><Icon tiny>check</Icon> Записаться</a></li>
+                            </ul>
                         </div>
-                        <Navbar brand="Доктор Диана" right className="header">
+                        <Navbar brand="Доктор Диана" right className="header-menu">
                             <li><Link to="/">Главная</Link></li>
                             <li><Link to="/about">Обо мне</Link></li>
                             <li><Link to="/services">Услуги</Link></li>

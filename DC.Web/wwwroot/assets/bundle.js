@@ -929,6 +929,65 @@ function idgen() {
 
 /***/ }),
 /* 12 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__BrowserRouter__ = __webpack_require__(103);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "BrowserRouter", function() { return __WEBPACK_IMPORTED_MODULE_0__BrowserRouter__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__HashRouter__ = __webpack_require__(105);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "HashRouter", function() { return __WEBPACK_IMPORTED_MODULE_1__HashRouter__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Link__ = __webpack_require__(52);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Link", function() { return __WEBPACK_IMPORTED_MODULE_2__Link__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__MemoryRouter__ = __webpack_require__(107);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "MemoryRouter", function() { return __WEBPACK_IMPORTED_MODULE_3__MemoryRouter__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__NavLink__ = __webpack_require__(109);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "NavLink", function() { return __WEBPACK_IMPORTED_MODULE_4__NavLink__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Prompt__ = __webpack_require__(112);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Prompt", function() { return __WEBPACK_IMPORTED_MODULE_5__Prompt__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__Redirect__ = __webpack_require__(113);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Redirect", function() { return __WEBPACK_IMPORTED_MODULE_6__Redirect__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__Route__ = __webpack_require__(54);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Route", function() { return __WEBPACK_IMPORTED_MODULE_7__Route__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__Router__ = __webpack_require__(30);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Router", function() { return __WEBPACK_IMPORTED_MODULE_8__Router__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__StaticRouter__ = __webpack_require__(118);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "StaticRouter", function() { return __WEBPACK_IMPORTED_MODULE_9__StaticRouter__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__Switch__ = __webpack_require__(119);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Switch", function() { return __WEBPACK_IMPORTED_MODULE_10__Switch__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__matchPath__ = __webpack_require__(120);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "matchPath", function() { return __WEBPACK_IMPORTED_MODULE_11__matchPath__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__withRouter__ = __webpack_require__(121);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "withRouter", function() { return __WEBPACK_IMPORTED_MODULE_12__withRouter__["a"]; });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***/ }),
+/* 13 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1022,65 +1081,6 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 
 	return to;
 };
-
-
-/***/ }),
-/* 13 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__BrowserRouter__ = __webpack_require__(103);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "BrowserRouter", function() { return __WEBPACK_IMPORTED_MODULE_0__BrowserRouter__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__HashRouter__ = __webpack_require__(105);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "HashRouter", function() { return __WEBPACK_IMPORTED_MODULE_1__HashRouter__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Link__ = __webpack_require__(52);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Link", function() { return __WEBPACK_IMPORTED_MODULE_2__Link__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__MemoryRouter__ = __webpack_require__(107);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "MemoryRouter", function() { return __WEBPACK_IMPORTED_MODULE_3__MemoryRouter__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__NavLink__ = __webpack_require__(109);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "NavLink", function() { return __WEBPACK_IMPORTED_MODULE_4__NavLink__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Prompt__ = __webpack_require__(112);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Prompt", function() { return __WEBPACK_IMPORTED_MODULE_5__Prompt__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__Redirect__ = __webpack_require__(113);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Redirect", function() { return __WEBPACK_IMPORTED_MODULE_6__Redirect__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__Route__ = __webpack_require__(54);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Route", function() { return __WEBPACK_IMPORTED_MODULE_7__Route__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__Router__ = __webpack_require__(30);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Router", function() { return __WEBPACK_IMPORTED_MODULE_8__Router__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__StaticRouter__ = __webpack_require__(118);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "StaticRouter", function() { return __WEBPACK_IMPORTED_MODULE_9__StaticRouter__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__Switch__ = __webpack_require__(119);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Switch", function() { return __WEBPACK_IMPORTED_MODULE_10__Switch__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__matchPath__ = __webpack_require__(120);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "matchPath", function() { return __WEBPACK_IMPORTED_MODULE_11__matchPath__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__withRouter__ = __webpack_require__(121);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "withRouter", function() { return __WEBPACK_IMPORTED_MODULE_12__withRouter__["a"]; });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /***/ }),
@@ -4843,7 +4843,7 @@ var _app = __webpack_require__(101);
 
 var _app2 = _interopRequireDefault(_app);
 
-var _configureStore = __webpack_require__(180);
+var _configureStore = __webpack_require__(181);
 
 var _configureStore2 = _interopRequireDefault(_configureStore);
 
@@ -4871,7 +4871,7 @@ var store = (0, _configureStore2.default)();
  * LICENSE file in the root directory of this source tree.
  */
 
-var k=__webpack_require__(12),n=__webpack_require__(7),p=__webpack_require__(17),q=__webpack_require__(8),r="function"===typeof Symbol&&Symbol.for,t=r?Symbol.for("react.element"):60103,u=r?Symbol.for("react.portal"):60106,v=r?Symbol.for("react.fragment"):60107,w=r?Symbol.for("react.strict_mode"):60108,x=r?Symbol.for("react.profiler"):60114,y=r?Symbol.for("react.provider"):60109,z=r?Symbol.for("react.context"):60110,A=r?Symbol.for("react.async_mode"):60111,B=
+var k=__webpack_require__(13),n=__webpack_require__(7),p=__webpack_require__(17),q=__webpack_require__(8),r="function"===typeof Symbol&&Symbol.for,t=r?Symbol.for("react.element"):60103,u=r?Symbol.for("react.portal"):60106,v=r?Symbol.for("react.fragment"):60107,w=r?Symbol.for("react.strict_mode"):60108,x=r?Symbol.for("react.profiler"):60114,y=r?Symbol.for("react.provider"):60109,z=r?Symbol.for("react.context"):60110,A=r?Symbol.for("react.async_mode"):60111,B=
 r?Symbol.for("react.forward_ref"):60112;r&&Symbol.for("react.timeout");var C="function"===typeof Symbol&&Symbol.iterator;function D(a){for(var b=arguments.length-1,e="https://reactjs.org/docs/error-decoder.html?invariant="+a,c=0;c<b;c++)e+="&args[]="+encodeURIComponent(arguments[c+1]);n(!1,"Minified React error #"+a+"; visit %s for the full message or use the non-minified dev environment for full errors and additional helpful warnings. ",e)}
 var E={isMounted:function(){return!1},enqueueForceUpdate:function(){},enqueueReplaceState:function(){},enqueueSetState:function(){}};function F(a,b,e){this.props=a;this.context=b;this.refs=p;this.updater=e||E}F.prototype.isReactComponent={};F.prototype.setState=function(a,b){"object"!==typeof a&&"function"!==typeof a&&null!=a?D("85"):void 0;this.updater.enqueueSetState(this,a,b,"setState")};F.prototype.forceUpdate=function(a){this.updater.enqueueForceUpdate(this,a,"forceUpdate")};function G(){}
 G.prototype=F.prototype;function H(a,b,e){this.props=a;this.context=b;this.refs=p;this.updater=e||E}var I=H.prototype=new G;I.constructor=H;k(I,F.prototype);I.isPureReactComponent=!0;var J={current:null},K=Object.prototype.hasOwnProperty,L={key:!0,ref:!0,__self:!0,__source:!0};
@@ -4908,7 +4908,7 @@ if (process.env.NODE_ENV !== "production") {
   (function() {
 'use strict';
 
-var _assign = __webpack_require__(12);
+var _assign = __webpack_require__(13);
 var invariant = __webpack_require__(7);
 var emptyObject = __webpack_require__(17);
 var warning = __webpack_require__(18);
@@ -6385,7 +6385,7 @@ module.exports = react;
 /*
  Modernizr 3.0.0pre (Custom Build) | MIT
 */
-var aa=__webpack_require__(7),ca=__webpack_require__(0),m=__webpack_require__(35),p=__webpack_require__(12),v=__webpack_require__(8),da=__webpack_require__(36),ea=__webpack_require__(37),fa=__webpack_require__(38),ha=__webpack_require__(17);
+var aa=__webpack_require__(7),ca=__webpack_require__(0),m=__webpack_require__(35),p=__webpack_require__(13),v=__webpack_require__(8),da=__webpack_require__(36),ea=__webpack_require__(37),fa=__webpack_require__(38),ha=__webpack_require__(17);
 function A(a){for(var b=arguments.length-1,c="https://reactjs.org/docs/error-decoder.html?invariant="+a,d=0;d<b;d++)c+="&args[]="+encodeURIComponent(arguments[d+1]);aa(!1,"Minified React error #"+a+"; visit %s for the full message or use the non-minified dev environment for full errors and additional helpful warnings. ",c)}ca?void 0:A("227");
 function ia(a,b,c,d,e,f,g,h,k){this._hasCaughtError=!1;this._caughtError=null;var n=Array.prototype.slice.call(arguments,3);try{b.apply(c,n)}catch(r){this._caughtError=r,this._hasCaughtError=!0}}
 var B={_caughtError:null,_hasCaughtError:!1,_rethrowError:null,_hasRethrowError:!1,invokeGuardedCallback:function(a,b,c,d,e,f,g,h,k){ia.apply(B,arguments)},invokeGuardedCallbackAndCatchFirstError:function(a,b,c,d,e,f,g,h,k){B.invokeGuardedCallback.apply(this,arguments);if(B.hasCaughtError()){var n=B.clearCaughtError();B._hasRethrowError||(B._hasRethrowError=!0,B._rethrowError=n)}},rethrowCaughtError:function(){return ka.apply(B,arguments)},hasCaughtError:function(){return B._hasCaughtError},clearCaughtError:function(){if(B._hasCaughtError){var a=
@@ -6695,7 +6695,7 @@ var invariant = __webpack_require__(7);
 var React = __webpack_require__(0);
 var warning = __webpack_require__(18);
 var ExecutionEnvironment = __webpack_require__(35);
-var _assign = __webpack_require__(12);
+var _assign = __webpack_require__(13);
 var emptyFunction = __webpack_require__(8);
 var checkPropTypes = __webpack_require__(23);
 var getActiveElement = __webpack_require__(36);
@@ -24261,7 +24261,7 @@ function createProvider() {
 var emptyFunction = __webpack_require__(8);
 var invariant = __webpack_require__(7);
 var warning = __webpack_require__(18);
-var assign = __webpack_require__(12);
+var assign = __webpack_require__(13);
 
 var ReactPropTypesSecret = __webpack_require__(24);
 var checkPropTypes = __webpack_require__(23);
@@ -25940,7 +25940,7 @@ var _header = __webpack_require__(102);
 
 var _header2 = _interopRequireDefault(_header);
 
-var _reactRouterDom = __webpack_require__(13);
+var _reactRouterDom = __webpack_require__(12);
 
 var _route = __webpack_require__(160);
 
@@ -26050,7 +26050,7 @@ var _propTypes = __webpack_require__(1);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _reactRouterDom = __webpack_require__(13);
+var _reactRouterDom = __webpack_require__(12);
 
 var _reactMaterialize = __webpack_require__(9);
 
@@ -26095,15 +26095,9 @@ var Header = function (_React$Component) {
                     scrollingLock: true
                 });
             } else if (window.scrollY < 236) {
-                if (window.innerWidth > 992) {
-                    this.setState({
-                        scrollingLock: false
-                    });
-                } else {
-                    this.setState({
-                        scrollingLock: true
-                    });
-                }
+                this.setState({
+                    scrollingLock: false
+                });
             }
         }
     }, {
@@ -26114,19 +26108,19 @@ var Header = function (_React$Component) {
                 { style: { marginBottom: this.state.scrollingLock ? "320px" : "0" } },
                 _react2.default.createElement(
                     'div',
-                    { className: 'main', style: { width: "100%", top: this.state.scrollingLock ? "-236px" : "0", position: this.state.scrollingLock ? "fixed" : "relative" } },
+                    { className: 'header', style: { width: "100%", top: this.state.scrollingLock ? "-236px" : "0", position: this.state.scrollingLock ? "fixed" : "relative" } },
                     _react2.default.createElement(
                         'div',
-                        { className: 'main-overlay' },
+                        { className: 'header-overlay' },
                         _react2.default.createElement(
                             'div',
-                            { className: 'header-top hide-on-med-and-down' },
-                            _react2.default.createElement('img', { className: 'brand-logo responsive-img', src: 'favicon.png', alt: '' }),
+                            { className: 'header-top' },
+                            _react2.default.createElement('img', { className: 'header-top-logo', src: 'favicon.png', alt: '' }),
                             _react2.default.createElement(
-                                'div',
-                                { className: 'right' },
+                                'ul',
+                                { className: 'header-top-contacts' },
                                 _react2.default.createElement(
-                                    'p',
+                                    'li',
                                     null,
                                     _react2.default.createElement(
                                         'a',
@@ -26140,7 +26134,7 @@ var Header = function (_React$Component) {
                                     )
                                 ),
                                 _react2.default.createElement(
-                                    'p',
+                                    'li',
                                     null,
                                     _react2.default.createElement(
                                         'a',
@@ -26152,12 +26146,26 @@ var Header = function (_React$Component) {
                                         ),
                                         ' fireshock2@gmail.com'
                                     )
+                                ),
+                                _react2.default.createElement(
+                                    'li',
+                                    null,
+                                    _react2.default.createElement(
+                                        'a',
+                                        { className: 'white-text', href: 'mailto:fireshock2@gmail.com' },
+                                        _react2.default.createElement(
+                                            _reactMaterialize.Icon,
+                                            { tiny: true },
+                                            'check'
+                                        ),
+                                        ' \u0417\u0430\u043F\u0438\u0441\u0430\u0442\u044C\u0441\u044F'
+                                    )
                                 )
                             )
                         ),
                         _react2.default.createElement(
                             _reactMaterialize.Navbar,
-                            { brand: '\u0414\u043E\u043A\u0442\u043E\u0440 \u0414\u0438\u0430\u043D\u0430', right: true, className: 'header' },
+                            { brand: '\u0414\u043E\u043A\u0442\u043E\u0440 \u0414\u0438\u0430\u043D\u0430', right: true, className: 'header-menu' },
                             _react2.default.createElement(
                                 'li',
                                 null,
@@ -33093,47 +33101,47 @@ var _services = __webpack_require__(166);
 
 var _services2 = _interopRequireDefault(_services);
 
-var _serviceDiagnostics = __webpack_require__(168);
+var _serviceDiagnostics = __webpack_require__(169);
 
 var _serviceDiagnostics2 = _interopRequireDefault(_serviceDiagnostics);
 
-var _serviceDiagnosticsPanoramic = __webpack_require__(170);
+var _serviceDiagnosticsPanoramic = __webpack_require__(171);
 
 var _serviceDiagnosticsPanoramic2 = _interopRequireDefault(_serviceDiagnosticsPanoramic);
 
-var _serviceDiagnosticsTomography = __webpack_require__(171);
+var _serviceDiagnosticsTomography = __webpack_require__(172);
 
 var _serviceDiagnosticsTomography2 = _interopRequireDefault(_serviceDiagnosticsTomography);
 
-var _serviceDiagnosticsDesign = __webpack_require__(172);
+var _serviceDiagnosticsDesign = __webpack_require__(173);
 
 var _serviceDiagnosticsDesign2 = _interopRequireDefault(_serviceDiagnosticsDesign);
 
-var _serviceDiagnosticsOcclusion = __webpack_require__(173);
+var _serviceDiagnosticsOcclusion = __webpack_require__(174);
 
 var _serviceDiagnosticsOcclusion2 = _interopRequireDefault(_serviceDiagnosticsOcclusion);
 
-var _serviceDiagnosticsAxiography = __webpack_require__(174);
+var _serviceDiagnosticsAxiography = __webpack_require__(175);
 
 var _serviceDiagnosticsAxiography2 = _interopRequireDefault(_serviceDiagnosticsAxiography);
 
-var _serviceTherapy = __webpack_require__(175);
+var _serviceTherapy = __webpack_require__(176);
 
 var _serviceTherapy2 = _interopRequireDefault(_serviceTherapy);
 
-var _serviceOrthopedics = __webpack_require__(176);
+var _serviceOrthopedics = __webpack_require__(177);
 
 var _serviceOrthopedics2 = _interopRequireDefault(_serviceOrthopedics);
 
-var _serviceSurgery = __webpack_require__(177);
+var _serviceSurgery = __webpack_require__(178);
 
 var _serviceSurgery2 = _interopRequireDefault(_serviceSurgery);
 
-var _serviceImplantology = __webpack_require__(178);
+var _serviceImplantology = __webpack_require__(179);
 
 var _serviceImplantology2 = _interopRequireDefault(_serviceImplantology);
 
-var _serviceGnathology = __webpack_require__(179);
+var _serviceGnathology = __webpack_require__(180);
 
 var _serviceGnathology2 = _interopRequireDefault(_serviceGnathology);
 
@@ -33252,6 +33260,10 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactMaterialize = __webpack_require__(9);
 
+var _headedPage = __webpack_require__(168);
+
+var _headedPage2 = _interopRequireDefault(_headedPage);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -33273,17 +33285,8 @@ var Home = function (_React$Component) {
         key: 'render',
         value: function render() {
             return _react2.default.createElement(
-                'div',
-                null,
-                _react2.default.createElement(
-                    'section',
-                    null,
-                    _react2.default.createElement(
-                        'h3',
-                        { className: 'secondary-text center' },
-                        '\u0412\u0440\u0430\u0447-\u0441\u0442\u043E\u043C\u0430\u0442\u043E\u043B\u043E\u0433 \u0442\u0435\u0440\u0430\u043F\u0435\u0432\u0442, \u0445\u0438\u0440\u0443\u0440\u0433, \u043E\u0440\u0442\u043E\u043F\u0435\u0434'
-                    )
-                ),
+                _headedPage2.default,
+                { header: '\u0412\u0440\u0430\u0447-\u0441\u0442\u043E\u043C\u0430\u0442\u043E\u043B\u043E\u0433 \u0442\u0435\u0440\u0430\u043F\u0435\u0432\u0442, \u0445\u0438\u0440\u0443\u0440\u0433, \u043E\u0440\u0442\u043E\u043F\u0435\u0434' },
                 _react2.default.createElement(
                     'section',
                     null,
@@ -33300,7 +33303,7 @@ var Home = function (_React$Component) {
                             { s: 12, m: 6 },
                             _react2.default.createElement(
                                 'h3',
-                                { className: 'secondary-text' },
+                                { className: 'header-text' },
                                 '\u0417\u0430\u0433\u043E\u043B\u043E\u0432\u043E\u043A'
                             ),
                             _react2.default.createElement(
@@ -33331,7 +33334,7 @@ var Home = function (_React$Component) {
                             { s: 12, m: 6 },
                             _react2.default.createElement(
                                 'h3',
-                                { className: 'secondary-text' },
+                                { className: 'header-text' },
                                 '\u0413\u043B\u0443\u0431\u043E\u043A\u0438\u0439 \u0441\u043C\u044B\u0441\u043B'
                             ),
                             _react2.default.createElement(
@@ -33531,13 +33534,17 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactRouterDom = __webpack_require__(13);
+var _reactRouterDom = __webpack_require__(12);
 
 var _reactMaterialize = __webpack_require__(9);
 
 var _serviceCard = __webpack_require__(167);
 
 var _serviceCard2 = _interopRequireDefault(_serviceCard);
+
+var _headedPage = __webpack_require__(168);
+
+var _headedPage2 = _interopRequireDefault(_headedPage);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -33560,17 +33567,8 @@ var Services = function (_React$Component) {
         key: "render",
         value: function render() {
             return _react2.default.createElement(
-                "div",
-                null,
-                _react2.default.createElement(
-                    "section",
-                    null,
-                    _react2.default.createElement(
-                        "h3",
-                        { className: "secondary-text center" },
-                        "\u0423\u0441\u043B\u0443\u0433\u0438"
-                    )
-                ),
+                _headedPage2.default,
+                { header: "\u0423\u0441\u043B\u0443\u0433\u0438" },
                 _react2.default.createElement(
                     "section",
                     null,
@@ -33684,7 +33682,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactRouterDom = __webpack_require__(13);
+var _reactRouterDom = __webpack_require__(12);
 
 var _reactMaterialize = __webpack_require__(9);
 
@@ -33763,11 +33761,73 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
+var _reactRouterDom = __webpack_require__(12);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var HeadedPage = function (_React$Component) {
+    _inherits(HeadedPage, _React$Component);
+
+    function HeadedPage() {
+        _classCallCheck(this, HeadedPage);
+
+        return _possibleConstructorReturn(this, (HeadedPage.__proto__ || Object.getPrototypeOf(HeadedPage)).apply(this, arguments));
+    }
+
+    _createClass(HeadedPage, [{
+        key: "render",
+        value: function render() {
+            return _react2.default.createElement(
+                "div",
+                null,
+                _react2.default.createElement(
+                    "h3",
+                    { className: "header-text center" },
+                    this.props.header
+                ),
+                this.props.children
+            );
+        }
+    }]);
+
+    return HeadedPage;
+}(_react2.default.Component);
+
+exports.default = HeadedPage;
+;
+
+/***/ }),
+/* 169 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
 var _reactMaterialize = __webpack_require__(9);
 
-var _serviceItemCard = __webpack_require__(169);
+var _serviceItemCard = __webpack_require__(170);
 
 var _serviceItemCard2 = _interopRequireDefault(_serviceItemCard);
+
+var _headedPage = __webpack_require__(168);
+
+var _headedPage2 = _interopRequireDefault(_headedPage);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -33790,21 +33850,8 @@ var Diagnostics = function (_React$Component) {
         key: "render",
         value: function render() {
             return _react2.default.createElement(
-                "div",
-                null,
-                _react2.default.createElement(
-                    "section",
-                    null,
-                    _react2.default.createElement(
-                        "div",
-                        null,
-                        _react2.default.createElement(
-                            "h3",
-                            { className: "secondary-text center" },
-                            "\u0414\u0438\u0430\u0433\u043D\u043E\u0441\u0442\u0438\u043A\u0430"
-                        )
-                    )
-                ),
+                _headedPage2.default,
+                { header: "\u0414\u0438\u0430\u0433\u043D\u043E\u0441\u0442\u0438\u043A\u0430" },
                 _react2.default.createElement(
                     "section",
                     { className: "cardlink-container" },
@@ -33825,7 +33872,7 @@ exports.default = Diagnostics;
 ;
 
 /***/ }),
-/* 169 */
+/* 170 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -33841,7 +33888,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactRouterDom = __webpack_require__(13);
+var _reactRouterDom = __webpack_require__(12);
 
 var _reactMaterialize = __webpack_require__(9);
 
@@ -33893,7 +33940,7 @@ exports.default = ServiceItemCard;
 ;
 
 /***/ }),
-/* 170 */
+/* 171 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -34049,7 +34096,7 @@ exports.default = Panoramic;
 ;
 
 /***/ }),
-/* 171 */
+/* 172 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -34112,7 +34159,7 @@ exports.default = Tomography;
 ;
 
 /***/ }),
-/* 172 */
+/* 173 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -34175,7 +34222,7 @@ exports.default = Design;
 ;
 
 /***/ }),
-/* 173 */
+/* 174 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -34238,7 +34285,7 @@ exports.default = Occlusion;
 ;
 
 /***/ }),
-/* 174 */
+/* 175 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -34301,7 +34348,7 @@ exports.default = Axiography;
 ;
 
 /***/ }),
-/* 175 */
+/* 176 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -34352,7 +34399,7 @@ exports.default = Therapy;
 ;
 
 /***/ }),
-/* 176 */
+/* 177 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -34403,7 +34450,7 @@ exports.default = Orthopedics;
 ;
 
 /***/ }),
-/* 177 */
+/* 178 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -34454,7 +34501,7 @@ exports.default = Surgery;
 ;
 
 /***/ }),
-/* 178 */
+/* 179 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -34505,7 +34552,7 @@ exports.default = Implantology;
 ;
 
 /***/ }),
-/* 179 */
+/* 180 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -34556,7 +34603,7 @@ exports.default = Gnathology;
 ;
 
 /***/ }),
-/* 180 */
+/* 181 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -34569,11 +34616,11 @@ exports.default = configureStore;
 
 var _redux = __webpack_require__(26);
 
-var _rootReducer = __webpack_require__(181);
+var _rootReducer = __webpack_require__(182);
 
 var _rootReducer2 = _interopRequireDefault(_rootReducer);
 
-var _reduxThunk = __webpack_require__(183);
+var _reduxThunk = __webpack_require__(184);
 
 var _reduxThunk2 = _interopRequireDefault(_reduxThunk);
 
@@ -34594,7 +34641,7 @@ function configureStore(initialState) {
 }
 
 /***/ }),
-/* 181 */
+/* 182 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -34606,7 +34653,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _redux = __webpack_require__(26);
 
-var _homeReducer = __webpack_require__(182);
+var _homeReducer = __webpack_require__(183);
 
 var _homeReducer2 = _interopRequireDefault(_homeReducer);
 
@@ -34617,7 +34664,7 @@ exports.default = (0, _redux.combineReducers)({
 });
 
 /***/ }),
-/* 182 */
+/* 183 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -34626,7 +34673,7 @@ exports.default = (0, _redux.combineReducers)({
 var initialState = {};
 
 /***/ }),
-/* 183 */
+/* 184 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";

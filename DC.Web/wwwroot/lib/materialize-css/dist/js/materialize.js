@@ -1929,7 +1929,7 @@ $jscomp.polyfill = function (e, r, p, m) {
       _this3.options = $.extend({}, Collapsible.defaults, options);
 
       // Setup tab indices
-      _this3.$headers = _this3.$el.children('li').children('.collapsible-header');
+      _this3.$headers = _this3.$el.children('li').children('.collapsible-header-menu');
       _this3.$headers.attr('tabindex', 0);
 
       _this3._setupEventHandlers();
@@ -1993,7 +1993,7 @@ $jscomp.polyfill = function (e, r, p, m) {
     }, {
       key: "_handleCollapsibleClick",
       value: function _handleCollapsibleClick(e) {
-        var $header = $(e.target).closest('.collapsible-header');
+        var $header = $(e.target).closest('.collapsible-header-menu');
         if (e.target && $header.length) {
           var $collapsible = $header.closest('.collapsible');
           if ($collapsible[0] === this.el) {
