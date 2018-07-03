@@ -7,7 +7,7 @@ body {
 }
 
 .main {
-    height: 100vh;
+    height: 300px;
     min-height: 300px;
     background: url(../images/main-background.jpg) no-repeat center;
     background-size: cover;
@@ -31,6 +31,10 @@ body {
     background-color: transparent;
     position: relative;
     z-index: 2;
+}
+
+.header-top {
+    height: 236px;
 }
 
 /* Wrapping element */

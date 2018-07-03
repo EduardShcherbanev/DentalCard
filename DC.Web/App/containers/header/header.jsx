@@ -22,11 +22,11 @@ export default class Header extends React.Component {
     }
 
     handleScroll() {
-        if (window.scrollY > 112) {
+        if (window.scrollY > 236) {
             this.setState({
                 scrollingLock: true
             });
-        } else if (window.scrollY < 112) {
+        } else if (window.scrollY < 236) {
             if (window.innerWidth > 992) {
                 this.setState({
                     scrollingLock: false
@@ -43,7 +43,7 @@ export default class Header extends React.Component {
         return (
             <div className="main" style={{ marginBottom: this.state.scrollingLock ? "64px" : "0" }}>
                 <div className="main-overlay">
-                    <div className="hide-on-med-and-down">
+                    <div className="header-top hide-on-med-and-down">
                         <img className="brand-logo responsive-img" src="favicon.png" alt="" />
                         <div className="right">
                             <p><a className="white-text" href="tel:+7 926 191-23-94"><Icon tiny>phone</Icon> +7 926 191-23-94</a></p>

@@ -26090,11 +26090,11 @@ var Header = function (_React$Component) {
     }, {
         key: 'handleScroll',
         value: function handleScroll() {
-            if (window.scrollY > 112) {
+            if (window.scrollY > 236) {
                 this.setState({
                     scrollingLock: true
                 });
-            } else if (window.scrollY < 112) {
+            } else if (window.scrollY < 236) {
                 if (window.innerWidth > 992) {
                     this.setState({
                         scrollingLock: false
@@ -26117,7 +26117,7 @@ var Header = function (_React$Component) {
                     { className: 'main-overlay' },
                     _react2.default.createElement(
                         'div',
-                        { className: 'hide-on-med-and-down' },
+                        { className: 'header-top hide-on-med-and-down' },
                         _react2.default.createElement('img', { className: 'brand-logo responsive-img', src: 'favicon.png', alt: '' }),
                         _react2.default.createElement(
                             'div',
