@@ -7,13 +7,13 @@ body {
 }
 
 .header {
+    position: relative;
     height: 300px;
     min-height: 300px;
     background: url(../images/main-background.jpg) no-repeat center;
     background-size: cover;
-    position: relative;
-    z-index: 997;
     color: #fff;
+    z-index: 1;
 }
 
 .header-overlay {
@@ -23,16 +23,14 @@ body {
     width: 100%;
     height: 100%;
     opacity: 0.8;
-    z-index: 0;
     background-image: -moz-linear-gradient(150deg, rgb(136, 211, 206) 0%, rgb(110, 69, 226) 100%);
     background-image: -webkit-linear-gradient(150deg, rgb(136, 211, 206) 0%, rgb(110, 69, 226) 100%);
     background-image: -ms-linear-gradient(150deg, rgb(136, 211, 206) 0%, rgb(110, 69, 226) 100%);
 }
 
 .header-menu {
-    background-color: transparent;
     position: relative;
-    z-index: 2;
+    background-color: transparent;
     box-shadow: none;
 }
 
