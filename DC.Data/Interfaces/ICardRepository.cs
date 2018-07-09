@@ -2,12 +2,13 @@
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
+using DC.Model;
 using DC.Model.Interfaces;
 
-namespace DC.BusinessLogic.Interfaces
+namespace DC.Data.Interfaces
 {
-    public interface IPageLogic
+    public interface ICardRepository
     {
-        Task<IPageData> GetPageAsync(string path);
+        Task<List<ICardData>> GetCardsAsync(int pageId);
     }
 }

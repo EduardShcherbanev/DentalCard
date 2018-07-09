@@ -11,6 +11,6 @@ namespace DC.Web.Models.MultipleContent
         public string Header { get; set; }
         public string ImageSrc { get; set; }
         public string Description { get; set; }
-        public int LinkToPageId { get; set; }
+        public string LinkToPageUrl { get; set; }
     }
 }

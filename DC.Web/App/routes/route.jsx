@@ -20,6 +20,8 @@ import Surgery from "../containers/services/serviceSurgery.jsx";
 import Implantology from "../containers/services/serviceImplantology.jsx";
 import Gnathology from "../containers/services/serviceGnathology.jsx";
 
+import MultipleContent from "../components/multipleContent.jsx";
+
 export default class Routing extends React.Component {
 
     render() {
@@ -44,6 +46,8 @@ export default class Routing extends React.Component {
                     <Route exact path="/services/surgery" component={Surgery} />
                     <Route exact path="/services/implantology" component={Implantology} />
                     <Route exact path="/services/gnathology" component={Gnathology} />
+
+                    <Route exact path="/test" component={MultipleContent} />
                 </Switch>
             </div>
         );
