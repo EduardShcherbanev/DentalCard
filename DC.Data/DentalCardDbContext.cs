@@ -7,7 +7,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace DC.Data
 {
-    public class DbContext : IdentityDbContext<ApplicationUser>
+    public class DentalCardDbContext : IdentityDbContext<ApplicationUser>
     {
         public string UserId { get; set; }
 
@@ -15,7 +15,7 @@ namespace DC.Data
         public DbSet<Card> Cards { get; set; }
         public DbSet<Paragraph> Paragraphs { get; set; }
 
-        public DbContext(DbContextOptions<DbContext> options)
+        public DentalCardDbContext(DbContextOptions<DentalCardDbContext> options)
             : base(options)
         {
         }

@@ -2,6 +2,7 @@
 using System.Text;
 using DC.BusinessLogic.Interfaces;
 using DC.BusinessLogic.Logics;
+using DC.Data;
 using DC.Data.Interfaces;
 using DC.Data.Repositories;
 using DC.Model;
@@ -29,7 +30,7 @@ namespace DC.Web
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<DbContext>(options =>
+            services.AddDbContext<DentalCardDbContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
             services.AddIdentity<ApplicationUser, IdentityRole>()
@@ -84,6 +85,11 @@ namespace DC.Web
                 routes.MapRoute(
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
+
+                routes.MapRoute(
+                    name: "DefaultApi",
+                    template: "api/{controller}/{action}");
+
                 routes.MapSpaFallbackRoute("spa-fallback", new { controller = "Home", action = "Index" });
             });
         }

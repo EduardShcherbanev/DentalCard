@@ -6,11 +6,11 @@ namespace DC.Data.Repositories
 {
     public abstract class BaseRepository
     {
-        protected readonly DbContext DbContext;
+        protected readonly DentalCardDbContext DentalCardDbContext;
 
-        protected BaseRepository(DbContext dbContext)
+        protected BaseRepository(DentalCardDbContext dentalCardDbContext)
         {
-            DbContext = dbContext;
+            DentalCardDbContext = dentalCardDbContext;
         }
     }
 }

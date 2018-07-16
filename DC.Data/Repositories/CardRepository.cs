@@ -11,14 +11,14 @@ namespace DC.Data.Repositories
 {
     public class CardRepository : BaseRepository, ICardRepository
     {
-        public CardRepository(DbContext dbContext) : base(dbContext)
+        public CardRepository(DentalCardDbContext dentalCardDbContext) : base(dentalCardDbContext)
         {
         }
 
         public async Task<List<ICardData>> GetCardsAsync(int pageId)
         {
-                return await (from c in DbContext.Cards
-                              join p in DbContext.Pages on c.ToPageId equals p.Id
+                return await (from c in DentalCardDbContext.Cards
+                              join p in DentalCardDbContext.Pages on c.ToPageId equals p.Id
                               where c.PageId == pageId
                               select new CardData
                               {

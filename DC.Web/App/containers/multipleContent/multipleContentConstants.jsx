@@ -1,0 +1,2 @@
+﻿export const GET_PAGE_SUCCESS = "GET_PAGE_SUCCESS";
+export const GET_PAGE_ERROR = "GET_PAGE_ERROR";

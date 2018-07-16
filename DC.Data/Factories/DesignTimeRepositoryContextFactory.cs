@@ -8,9 +8,9 @@ using Microsoft.Extensions.Configuration;
 
 namespace DC.Data.Factories
 {
-    public class DesignTimeRepositoryContextFactory : IDesignTimeDbContextFactory<DbContext>
+    public class DesignTimeRepositoryContextFactory : IDesignTimeDbContextFactory<DentalCardDbContext>
     {
-        public DbContext CreateDbContext(string[] args)
+        public DentalCardDbContext CreateDbContext(string[] args)
         {
             var builder = new ConfigurationBuilder()
                 .SetBasePath(Directory.GetCurrentDirectory())
@@ -19,10 +19,10 @@ namespace DC.Data.Factories
             var config = builder.Build();
             var connectionString = config.GetConnectionString("DefaultConnection");
 
-            var optionsBuilder = new DbContextOptionsBuilder<DbContext>();
+            var optionsBuilder = new DbContextOptionsBuilder<DentalCardDbContext>();
             optionsBuilder.UseSqlServer(connectionString);
 
-            return new DbContext(optionsBuilder.Options);
+            return new DentalCardDbContext(optionsBuilder.Options);
         }
     }
 }

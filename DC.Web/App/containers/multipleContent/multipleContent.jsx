@@ -1,11 +1,40 @@
-﻿import React from 'react';
-import { Parallax, Row, Col } from 'react-materialize'
+﻿import React from "react";
+import ReactDOM from 'react-dom';
+import { bindActionCreators } from "redux";
+import { connect } from 'react-redux';
+import queryString from "query-string";
+import { Parallax, Row, Col } from "react-materialize"
 import HeadedPage from "../../components/headedPage.jsx";
+import { getPage } from "./multipleContentActions.jsx";
+import "isomorphic-fetch";
 
-export default class MultipleContent extends React.Component {
+class MultipleContent extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = { query: location.pathname };
+    }
+
+    componentDidMount() {
+        this.getPage();
+    }
+
+    getPage() {
+        this.props.getPage(location.pathname);
+    }
+
+    componentWillReceiveProps(nextProps) {
+        if (this.state.query !== location.pathname) {
+            this.setState({ query: location.pathname });
+            this.getPage();
+        }
+    }
+
     render() {
+        const header = this.props.page.header;
+        const pageId = this.props.page.pageId;
+
         return (
-            <HeadedPage header="Врач-стоматолог терапевт, хирург, ортопед">
+            <HeadedPage header={header}>
                 <section>
                     <Row>
                         <Col s={12} m={6}><Parallax imageSrc="images/home/parallax-1.jpg" /></Col>
@@ -33,3 +62,18 @@ export default class MultipleContent extends React.Component {
         );
     }
 };
+
+let mapProps = (state) => {
+    return {
+        page: state.multipleContent.data,
+        error: state.multipleContent.error
+    };
+};
+
+let mapDispatch = (dispatch) => {
+    return {
+        getPage: bindActionCreators(getPage, dispatch)
+    };
+};
+
+export default connect(mapProps, mapDispatch)(MultipleContent);

@@ -20,7 +20,7 @@ import Surgery from "../containers/services/serviceSurgery.jsx";
 import Implantology from "../containers/services/serviceImplantology.jsx";
 import Gnathology from "../containers/services/serviceGnathology.jsx";
 
-import MultipleContent from "../components/multipleContent.jsx";
+import MultipleContent from "../containers/multipleContent/multipleContent.jsx";
 
 export default class Routing extends React.Component {
 

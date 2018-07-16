@@ -11,13 +11,13 @@ namespace DC.Data.Repositories
 {
     public class ParagraphRepository : BaseRepository, IParagraphRepository
     {
-        public ParagraphRepository(DbContext dbContext) : base(dbContext)
+        public ParagraphRepository(DentalCardDbContext dentalCardDbContext) : base(dentalCardDbContext)
         {
         }
 
         public async Task<List<IParagraphData>> GetParagraphsAsync(int pageId)
         {
-            return await (from p in DbContext.Paragraphs
+            return await (from p in DentalCardDbContext.Paragraphs
                           where p.PageId == pageId
                           select new ParagraphData
                           {

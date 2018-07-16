@@ -1,6 +1,6 @@
 ﻿import { combineReducers } from 'redux'
-import home from '../containers/home/homeReducer.jsx'
+import multipleContent from '../containers/multipleContent/multipleContentReducer.jsx'
 
 export default combineReducers({
-    home
+    multipleContent
 })

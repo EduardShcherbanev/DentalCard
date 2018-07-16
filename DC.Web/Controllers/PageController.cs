@@ -11,8 +11,8 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace DC.Web.Controllers
 {
-    [Route("api/[controller]")]
-    [ApiController]
+    //[Route("api/[controller]")]
+    //[ApiController]
     public class PageController : ControllerBase
     {
         private readonly IPageLogic _pageLogic;
@@ -22,6 +22,7 @@ namespace DC.Web.Controllers
             _pageLogic = pageLogic;
         }
 
+        [HttpGet]
         public async Task<MultipleContentViewModel> GetPage(string url)
         {
             IPageData page = await _pageLogic.GetPageAsync(url);

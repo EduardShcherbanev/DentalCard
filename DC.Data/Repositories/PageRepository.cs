@@ -7,13 +7,13 @@ namespace DC.Data.Repositories
 {
     public class PageRepository : BaseRepository, IPageRepository
     {
-        public PageRepository(DbContext dbContext) : base(dbContext)
+        public PageRepository(DentalCardDbContext dentalCardDbContext) : base(dentalCardDbContext)
         {
         }
 
         public async Task<Page> GetPageAsync(string path)
         {
-            return await DbContext.Pages.SingleOrDefaultAsync(p => p.Url == path);
+            return await DentalCardDbContext.Pages.SingleOrDefaultAsync(p => p.Url == path);
         }
     }
 }
