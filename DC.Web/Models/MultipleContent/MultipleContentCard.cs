@@ -12,5 +12,6 @@ namespace DC.Web.Models.MultipleContent
         public string ImageSrc { get; set; }
         public string Description { get; set; }
         public string LinkToPageUrl { get; set; }
+        public bool IsImageOnTop { get; set; }
     }
 }

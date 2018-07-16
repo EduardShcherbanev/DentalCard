@@ -42,7 +42,8 @@ namespace DC.Web.Controllers
                     Header = c.Header,
                     Description = c.Description,
                     ImageSrc = c.ImagePath,
-                    LinkToPageUrl = c.ToPageUrl
+                    LinkToPageUrl = c.ToPageUrl,
+                    IsImageOnTop = c.IsImageOnTop
                 }).ToList(),
                 Paragraphs = page.Paragraphs.OrderBy(p => p.Order).Select(p => new MultipleContentParagraph
                 {
