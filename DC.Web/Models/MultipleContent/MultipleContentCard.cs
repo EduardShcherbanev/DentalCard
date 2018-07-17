@@ -13,5 +13,6 @@ namespace DC.Web.Models.MultipleContent
         public string Description { get; set; }
         public string LinkToPageUrl { get; set; }
         public bool IsImageOnTop { get; set; }
+        public string Key => "card" + Id;
     }
 }

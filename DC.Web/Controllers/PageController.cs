@@ -34,7 +34,6 @@ namespace DC.Web.Controllers
 
             var content = new MultipleContentViewModel
             {
-                PageId = page.Id,
                 Header = page.Header,
                 Cards = page.Cards.OrderBy(c => c.Order).Select(c => new MultipleContentCard
                 {

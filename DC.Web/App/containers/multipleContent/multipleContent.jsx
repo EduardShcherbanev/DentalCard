@@ -6,6 +6,7 @@ import queryString from "query-string";
 import { Parallax, Row, Col } from "react-materialize"
 import HeadedPage from "../../components/headedPage.jsx";
 import ServiceItemCard from "../services/components/serviceItemCard.jsx";
+import ServiceCard from "../services/components/serviceCard.jsx";
 import { getPage } from "./multipleContentActions.jsx";
 import "isomorphic-fetch";
 
@@ -32,13 +33,16 @@ class MultipleContent extends React.Component {
 
     render() {
         const header = this.props.page.header;
-        const pageId = this.props.page.pageId;
         let cards = this.props.page.cards.map(card => {
-
-
-            return (
-                <ServiceItemCard key={card.id} name={card.header} to={card.linkToPageUrl} image={card.imageSrc} description={card.description} />
-            );
+            if (card.isImageOnTop) {
+                return (
+                    <ServiceItemCard key={card.key} name={card.header} to={card.linkToPageUrl} image={card.imageSrc} description={card.description} />
+                );
+            } else {
+                return (
+                    <ServiceCard key={card.key} serviceName={card.header} to={card.linkToPageUrl} image={card.imageSrc} serviceTasks={card.description} />
+                );
+            }
         });
         let paragraphs = this.props.page.paragraphs.map(paragraph => {
             var imageLeft;
@@ -70,7 +74,7 @@ class MultipleContent extends React.Component {
             }
 
             return (
-                <section key={paragraph.id}>
+                <section key={paragraph.key}>
                     <Row>
                         {imageLeft}
                         {text}

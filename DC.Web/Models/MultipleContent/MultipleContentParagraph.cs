@@ -12,5 +12,6 @@ namespace DC.Web.Models.MultipleContent
         public string ImageSrc { get; set; }
         public string Text { get; set; }
         public bool IsTextOnRight { get; set; }
+        public string Key => "para" + Id;
     }
 }

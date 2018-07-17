@@ -12,7 +12,7 @@ export default class ServiceCard extends React.Component {
                             <img src={this.props.image} alt="" />
                         </Col>
                         <Col s={7} m={7} l={7}>
-                            {this.props.serviceTasks.map(item => (<p className="card-description" key={item.name}>— {item.name}</p>))}
+                            {this.props.serviceTasks.split(/\r?\n/).map(item => (<p className="card-description" key={item}>{item}</p>))}
                         </Col>
                     </Row>
                 </Card>
